@@ -1,0 +1,7 @@
+<nopaper-navbar [isLogin]="authService.getUser()"></nopaper-navbar>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
+<nopaper-footer *ngIf="display.isDisplayFooter()"></nopaper-footer>

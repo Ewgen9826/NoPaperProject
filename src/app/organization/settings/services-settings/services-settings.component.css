@@ -1,0 +1,86 @@
+/*<!--Услуги и направления-->*/
+#AddNewDirection {
+  width: 100%;
+  height: 100px;
+  outline: none;
+  resize: none;
+  border: 2px solid rgba(27, 27, 27, 0.3);
+  border-radius: 5px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: -6px;
+}
+.blockForAddedButton {
+  display: flex;
+  justify-content: flex-end;
+}
+.lineWithOnesDirection {
+  display: flex;
+  flex-direction: row;
+  clear: both;
+  margin-bottom: 30px;
+}
+.nameOfThisDirection {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0px 10px 0px 10px;
+  background-color: #21be4a;
+  color: white;
+  border-radius: 0px 5px 0px 5px;
+}
+.lineWithOnesDirection:hover .buttonForDeleteDirection {
+  opacity: 1;
+}
+.lineWithOnesDirection:hover .nameOfThisDirection {
+  background-color: #259e44;
+  border-radius: 0px 0px 0px 5px;
+}
+
+.buttonForDeleteDirection {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  height: 50px;
+  font-size: 20px;
+  padding: 0px 15px 0px 15px;
+  background-color: #21be4a;
+  color: white;
+  border-radius: 0px 5px 0px 0px;
+}
+.lineLeftInButton {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: -4.5px;
+  font-weight: 100;
+  top: -5px;
+  color: white;
+  font-size: 35px;
+}
+.blockForAcceptButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.acceptButtonInSettings {
+  margin-top: 25px;
+  padding: 10px 45px 10px 45px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #21be4a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.acceptButtonInSettings:hover {
+  background-color: #269e44;
+  transition: 0.2s linear;
+}

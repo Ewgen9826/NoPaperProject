@@ -1,0 +1,153 @@
+.headlineNewEmloeyers {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  padding: 0px;
+}
+
+.photoBlockOfNewEmloeyers {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+.photoNewEmloeyers {
+  display: flex;
+  background-image: url('/assets/images/photoNewEmloeyers.png');
+  background-position: center;
+  align-items: flex-end;
+  cursor: pointer;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+.newPhotoButton {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  opacity: 0;
+  font-size: 22px;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  background-color: #21be4a;
+  color: white;
+}
+
+.photoNewEmloeyers:hover .newPhotoButton {
+  opacity: 1;
+}
+
+.newPhotoButton:hover {
+  background-color: #269e44;
+}
+
+.label-text-employers {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-top: 15px;
+  font-size: 18px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-style: italic;
+  padding-left: 15px;
+  border: 2px solid rgba(27, 27, 27, 0.3);
+  width: 100%;
+  height: 46px;
+  border-radius: 5px;
+  outline: none;
+}
+.employersLogin {
+  margin-top: 20px;
+}
+.PositionNewEmpl {
+  margin-top: 30px;
+}
+input:focus {
+  border: 2px solid rgba(33, 190, 75, 0.7);
+}
+select:focus {
+  border: 2px solid rgba(33, 190, 75, 0.7);
+}
+input[type="radio"]:after {
+  top: -4px;
+  width: 192px;
+  height: 46px;
+  position: relative;
+  background-color: #fff;
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid rgba(27, 27, 27, 0.3);
+  cursor: pointer;
+}
+input[id="TypeStaff"]:after {
+  font-weight: 510;
+  border-radius: 5px 0px 0px 5px;
+  font-size: 18px;
+  content: "Персонал";
+  padding: 8px 0px 0px 40px;
+  border-right: none;
+}
+input[id="TypeTrainer"]:after {
+  font-weight: 510;
+  border-radius: 0px 5px 5px 0px;
+  border-left: none;
+  text-align: center;
+  font-size: 18px;
+  content: "Тренер";
+  padding: 8px 0px 0px 0px;
+}
+input[id="TypeStaff"]:checked:after {
+  font-size: 18px;
+  content: "Персонал";
+  padding: 8px 0px 0px 40px;
+  color: #fff;
+}
+input[id="TypeTrainer"]:checked:after {
+  text-align: center;
+  font-size: 18px;
+  content: "Тренер";
+  padding: 8px 0px 0px 0px;
+  color: #fff;
+}
+input[type="radio"]:checked:after {
+  width: 192px;
+  height: 46px;
+  border-radius: 5px;
+  position: relative;
+  background-color: #21be4a;
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #21be4a;
+  cursor: pointer;
+}
+input[id="TypeStaff"]:checked:after {
+  border-radius: 5px 0px 0px 5px;
+}
+input[id="TypeTrainer"]:checked:after {
+  border-radius: 0px 5px 5px 0px;
+}
+.CreateNewEmployers {
+  width: 269px;
+  height: 63px;
+  border-radius: 5px;
+  margin-top: 40px;
+  background-color: #21be4a;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button.CreateNewEmployers > span {
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+}
+.CreateNewEmployers:hover {
+  background-color: #259e44;
+}

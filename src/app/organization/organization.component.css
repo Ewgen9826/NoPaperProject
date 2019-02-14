@@ -1,0 +1,135 @@
+/* --------------- PANEL SECTION ----------------- */
+
+.controlPanelSection {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  margin-bottom: 100px;
+}
+
+/* Кнопки панели */
+
+.buttonsInControlPanel {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+.buttonInPanel {
+  display: flex;
+  justify-content: center;
+  padding: 7px 0px 7px 0px;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid #dfdfdf;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #000;
+}
+
+.selectedButton {
+  background-color: #21be4a;
+  color: white;
+  transition: 0s;
+}
+
+#settingsButton {
+  border: none;
+}
+
+.buttonInPanel:hover {
+  background-color: #21be4a;
+  color: white;
+}
+
+.buttonInPanel:active {
+  background-color: #269e44;
+}
+
+.buttonInPanel i {
+  font-size: 30px;
+  transition: 0s;
+}
+.buttonInPanel span {
+  transition: 0s;
+}
+/* Содержимое панели */
+
+.contentOfControlPanel {
+  width: 100%;
+}
+
+.boxesOfContent {
+  display: none;
+}
+
+.selectedBoxOfContent {
+  display: block;
+}
+
+.boxForButtonsSettings {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0px;
+}
+
+.buttonsInBoxSettings {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+.buttonBoxSetting {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+  flex-direction: column;
+  font-weight: 600;
+  border-bottom: 1px solid #dfdfdf;
+  cursor: pointer;
+  transition: 0s;
+}
+
+#buttonSettingsPhoto {
+  border: none;
+}
+.icon-list {
+  width: 18%;
+}
+.buttonBoxSetting:hover {
+  background-color: #21be4a;
+  color: white;
+}
+
+.buttonInPanel:hover .icon-list {
+  filter: invert(100%) sepia(31%) saturate(0%) hue-rotate(94deg)
+    brightness(112%) contrast(100%);
+  color: #fff;
+}
+
+
+.selectedButtonOfSetting {
+  background-color: #21be4a;
+  color: white;
+}
+
+.buttonBoxSetting:active {
+  background-color: #269e44;
+}
+.active {
+  background-color: #21be4a;
+  color: #fff;
+}
+.icon-list-active img{
+  filter: invert(100%) sepia(31%) saturate(0%) hue-rotate(94deg)
+    brightness(112%) contrast(100%);
+  color: #fff;
+}

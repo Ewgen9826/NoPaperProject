@@ -1,0 +1,161 @@
+/*<!--Абонементы-->*/
+.blockForNameSectionNewAbonement {
+  display: flex;
+  justify-content: center;
+}
+.blockForListAbonements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.elementOfListAbonements {
+  display: flex;
+  justify-content: center;
+}
+.card-subscription {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  background: rgb(21, 39, 46);
+  background: linear-gradient(to left, #181f22, #3e4a4f);
+  width: 268px;
+  border-radius: 5px;
+  padding-bottom: 15px;
+  -webkit-box-shadow: 11px 11px 33px -8px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 11px 11px 33px -8px rgba(0, 0, 0, 0.18);
+  box-shadow: 11px 11px 33px -8px rgba(0, 0, 0, 0.18);
+}
+
+.card-subscription:hover .deleteAbonementButton {
+  opacity: 1;
+}
+.card-subscription:hover .changeAbonementButton {
+  opacity: 1;
+}
+.deleteAbonementButton {
+  color: #c62828;
+}
+.changeAbonementButton {
+  color: #cddc39;
+}
+.deleteAbonementButton,
+.changeAbonementButton {
+  opacity: 0;
+  position: absolute;
+  z-index: 20;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 12px;
+  top: 10px;
+  font-size: 24px;
+  padding: 5px;
+}
+.deleteAbonementButton:hover,
+.changeAbonementButton:hover {
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+}
+.changeAbonementButton {
+  right: 5px;
+  top: 45px;
+  padding: 5px;
+}
+.flex-row-align {
+  padding: 0px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.card-subscription:hover {
+  -webkit-box-shadow: 18px 18px 30px -8px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 18px 18px 30px -8px rgba(0, 0, 0, 0.56);
+  box-shadow: 18px 18px 35px -8px rgba(0, 0, 0, 0.5);
+}
+.card-subscription:hover img.stroke {
+  transform: rotate(360deg);
+  transition: 1s;
+}
+/*Шапка карты*/
+.heder-card-subscription {
+  position: relative;
+  top: -24px;
+  left: -25px;
+}
+div.heder-card-subscription > span {
+  position: absolute;
+  top: 20px;
+  color: #fff;
+  font-weight: 800;
+  left: 60px;
+}
+div.heder-card-subscription > span.studio-name {
+  top: 40px;
+  left: 85px;
+}
+.heder-card-subscription-img {
+  position: absolute;
+  z-index: -1;
+  left: 1px;
+  top: 68px;
+}
+
+/*Количество месяцев*/
+.section-card-subscription {
+  margin-top: 20px;
+  width: 118px;
+  height: 118px;
+  border: 3px solid #abafb0;
+  margin-left: 68px;
+  border-radius: 60px;
+}
+.stroke {
+  position: absolute;
+  left: 56px;
+  top: 80px;
+}
+div.section-card-subscription > span {
+  position: relative;
+  bottom: 10px;
+  font-size: 87px;
+  color: #fff;
+}
+
+/*Стоимость*/
+.footer-card-subscription {
+  margin-top: 30px;
+  text-align: center;
+}
+.month-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.circle1 {
+  position: relative;
+  top: 19px;
+  left: 40px;
+}
+.circle2 {
+  position: relative;
+  top: -14px;
+  left: 220px;
+}
+.circle1,
+.circle2 {
+  width: 6px;
+  height: 6px;
+  background-color: #21be4a;
+  border-radius: 10px;
+}
+.section-name {
+  color: #e7e8e8;
+  font-size: 18px;
+}
+.rubles {
+  color: #e7e8e8;
+}
+.price {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+}

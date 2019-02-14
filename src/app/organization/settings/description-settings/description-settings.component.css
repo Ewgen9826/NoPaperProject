@@ -1,0 +1,49 @@
+/*<!--Описание организации-->*/
+.contentDescriptOfOrg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.nameOfSection,
+.period-pole-name,
+.cost-pole-name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.selectbox {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.selectbox select:active {
+  border: none;
+  box-shadow: none;
+}
+.labelSelectOfInformation {
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.optionOfSelects {
+  background-color: white;
+  color: black;
+}
+
+.textAreaInSettings {
+  font-style: italic;
+  width: 100%;
+  height: 250px;
+  outline: none;
+  resize: none;
+  border: 2px solid rgba(27, 27, 27, 0.3);
+  border-radius: 5px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  padding: 5px 10px 5px 10px;
+}
+.textAreaInSettings:focus,
+#AddNewDirection:focus,
+.textAreaNewAbonement:focus {
+  border: 2px solid rgba(33, 190, 75, 0.7);
+}

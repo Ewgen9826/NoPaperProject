@@ -1,0 +1,83 @@
+input[type="text"],
+[type="password"] {
+  border-radius: 5px;
+  border: 2px solid #898989;
+  padding: 16px;
+  background: #313637;
+  color: #9c9b9b;
+  outline: none;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+[type="password"]:focus {
+  border: 2px solid var(--green-color);
+  background: #363a3b;
+  color: #fff;
+}
+
+.content {
+  min-width: 580px;
+  min-height: 620px;
+  height: 100vh;
+  background-image: url(/assets/images/login-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease;
+}
+
+.header-text h1 {
+  color: #fff;
+  margin: 140px 0 40px;
+}
+
+.menu-tabs {
+  list-style-type: none;
+  display: flex;
+}
+.menu-tabs li {
+  background-color: #363a3b;
+  border-radius: 0 5px 5px 0;
+  padding: 16px 40px;
+  cursor: pointer;
+}
+.menu-tabs li:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.menu-tabs li a {
+  color: #fff;
+}
+
+.menu-tabs li:hover {
+  background-color: #259e44;
+}
+.menu-tabs .active {
+  background-color: var(--green-color);
+}
+
+.verification-field {
+  color: #ff4444;
+  font-size: 14px;
+  opacity: 0;
+}
+.input-group .field .error-field {
+  border: 2px solid #ff4444;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.login-btn a {
+  margin-top: 40px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background: var(--green-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  align-self: center;
+}
+.login-btn a:hover {
+  background: #259e44;
+}

@@ -1,0 +1,37 @@
+<div class="container-fluid boxesOfContent" id="employersButtonBox">
+  <div class="row">
+    <div class="col-3 boxForButtonsEmployers ">
+      <div class="buttonsInBoxEmployers">
+        <a
+          [routerLink]="['/organization/employees/all']"
+          routerLinkActive="active"
+          class="buttonBoxEmployers"
+          id="buttonEmployers"
+        >
+          <span>Все сотрудники</span>
+        </a>
+
+        <a
+          [routerLink]="['/organization/employees/add']"
+          routerLinkActive="active"
+          class="buttonBoxEmployers"
+          id="buttonNewEmployers"
+        >
+          <span>Добавить нового</span>
+        </a>
+
+        <a
+          [routerLink]="['/organization/employees/management']"
+          routerLinkActive="active"
+          class="buttonBoxEmployers"
+          id="buttonСontrol"
+        >
+          <span>Управление</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-9 blockInBoxOfEmployer">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

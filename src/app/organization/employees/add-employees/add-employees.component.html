@@ -1,0 +1,126 @@
+<!--Добавить нового-->
+<div class="boxOfSelectedEmployers" id="buttonNewEmployersBox">
+  <div class="container">
+    <!--Фото и тип сотрудника-->
+    <div class="row ">
+      <div class="col-lg-12 headlineNewEmloeyers">
+        <span>Добавление нового сотрудника</span>
+      </div>
+      <!--Фото сотрудника-->
+      <div class="photoBlockOfNewEmloeyers">
+        <div class="photoNewEmloeyers">
+          <div class="newPhotoButton">
+            <i class="fas fa-camera"></i>
+          </div>
+        </div>
+      </div>
+      <!--Тип сотрудника-->
+      <div class="col-lg-8 col-md-12">
+        <label class="label-text-employers">Тип сотрудника</label><br />
+        <div class="row ">
+          <div class="col-xl-4 col-lg-5 col-md-4">
+            <input type="radio" id="TypeStaff" name="1" value="staff" />
+          </div>
+          <div class="col-xl-4 col-lg-5 col-md-4">
+            <input
+              type="radio"
+              checked="checked"
+              id="TypeTrainer"
+              name="1"
+              value="trainer"
+            />
+          </div>
+          <!--Логин сотрудника-->
+          <div class="col-xl-9 col-lg-11 employersLogin">
+            <label for="employersLogin" class="label-text-employers"
+              >Придумайте логин</label
+            ><br />
+            <input
+              type="text"
+              id="employersLogin"
+              placeholder="Введите логин"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Должность-->
+    <div class="row">
+      <div class="col-lg-9">
+        <label
+          for="PositionNewEmpl"
+          class="PositionNewEmpl label-text-employers"
+          >Должность</label
+        ><br />
+        <input
+          type="text"
+          id="PositionNewEmpl"
+          placeholder="Введите должность сотрудника"
+        />
+      </div>
+    </div>
+    <!--Имя, Фамилия-->
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <label for="NewNameNewEmpl" class="label-text-employers">Имя</label
+        ><br />
+        <input type="text" id="NewNameNewEmpl" placeholder="Введите имя" />
+      </div>
+      <div class="col-lg-6">
+        <label for="NewSurnameNewEmpl" class="label-text-employers"
+          >Фамилия</label
+        ><br />
+        <input
+          type="text"
+          id="NewSurnameNewEmpl"
+          placeholder="Введите фамилию"
+        />
+      </div>
+    </div>
+    <!--Номер телефлна, пароль-->
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <label for="NewPhoneNumberNewEmpl" class="label-text-employers"
+          >Номер телефона</label
+        ><br />
+        <input
+          type="text"
+          id="NewPhoneNumberNewEmpl"
+          placeholder="Введите номер"
+        />
+      </div>
+      <div class="col-lg-6">
+        <label for="NewPasswordNewEpml" class="label-text-employers"
+          >Пароль</label
+        ><br />
+        <input type="password" id="NewPasswordNewEpml" placeholder="Пароль" />
+      </div>
+    </div>
+    <!--Email-->
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <label for="NewEmailNewEmpl" class="label-text-employers">Email</label
+        ><br />
+        <input type="email" id="NewEmailNewEmpl" placeholder="Введите email" />
+      </div>
+      <div class="col-lg-6">
+        <label for="NewConfirmPasswordNewEpml" class="label-text-employers"
+          >Повторите пароль</label
+        ><br />
+        <input
+          type="password"
+          id="NewConfirmPasswordNewEpml"
+          placeholder="Повторите пароль"
+        />
+      </div>
+    </div>
+    <!--Кнопка создать-->
+    <div class="row justify-content-center">
+      <div class="">
+        <button type="submit" class="CreateNewEmployers">
+          <span>Создать</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

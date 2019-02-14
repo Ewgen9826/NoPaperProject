@@ -1,0 +1,66 @@
+<div class="container controlPanelSection">
+  <div class="buttonsInControlPanel">
+    <a
+      [routerLink]="['/organization/employees']"
+      [routerLinkActive]="['active', 'icon-list-active']"
+      class="buttonInPanel"
+      id="employersButton"
+    >
+      <img src="assets/images/employee.svg" alt="employee" class="icon-list" />
+      <span>Мои сотрудники</span>
+    </a>
+
+    <a
+      [routerLink]="['/organization/clients']"
+      [routerLinkActive]="['active', 'icon-list-active']"
+      class="buttonInPanel"
+      id="customersButton"
+    >
+      <img src="assets/images/clients.svg" alt="clients" class="icon-list" />
+      <span>Клиенты</span>
+    </a>
+
+    <a
+      [routerLink]="['/organization/notifications']"
+      [routerLinkActive]="['active', 'icon-list-active']"
+      class="buttonInPanel"
+      id="notificationsButton"
+    >
+      <img
+        src="assets/images/notification.svg"
+        alt="notification"
+        class="icon-list"
+      />
+      <span>Уведомления</span>
+    </a>
+
+    <a
+      [routerLink]="['/organization/analytics']"
+      [routerLinkActive]="['active', 'icon-list-active']"
+      class="buttonInPanel"
+      id="statsButton"
+    >
+      <img
+        src="assets/images/analitics.svg"
+        alt="analitics"
+        class="icon-list"
+      />
+      <span>Аналитика</span>
+    </a>
+
+    <a
+      [routerLink]="['/organization/settings']"
+      [routerLinkActive]="['active', 'icon-list-active']"
+      class="buttonInPanel"
+      id="settingsButton"
+    >
+      <img src="assets/images/settings.svg" alt="settings" class="icon-list" />
+      <span>Настройки</span>
+    </a>
+  </div>
+  <div class="contentOfControlPanel">
+    <main [@routeAnimations]="prepareRoute(outlet)" class="content">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </main>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <div class="filtr col-12">Фильтр</div>
+    <div class="ByDate col-3">
+      <div class="form-group">
+        <label for="datepicker">Поиск по дате:</label>
+        <br />
+        <input
+          type="text"
+          id="datepicker"
+          autocomplete="off"
+          value="Выберите.."
+        />
+      </div>
+    </div>
+
+    <div class="ByPeriod col-6">
+      <div class="form-group">
+        <label for="datepicker1">Поиск по периоду:</label>
+        <br />
+        <span>c</span>
+        <input
+          type="text"
+          id="datepicker1"
+          autocomplete="off"
+          value="Выберите.."
+        />
+        <span>по</span>
+        <input
+          type="text"
+          id="datepicker2"
+          autocomplete="off"
+          value="Выберите.."
+        />
+      </div>
+    </div>
+    <div class="col-4 ">
+      <button type="submit" class="ButtonShow">
+        <span>Показать</span>
+      </button>
+    </div>
+  </div>
+  <!--График-->
+  <div class="row">
+    <div class="col-12 schedule">
+      <canvas
+        baseChart
+        id="myChart"
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="barChartType"
+        [colors]="barColors"
+      ></canvas>
+    </div>
+  </div>
+</div>

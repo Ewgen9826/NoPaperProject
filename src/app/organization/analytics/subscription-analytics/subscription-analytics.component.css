@@ -1,0 +1,180 @@
+.customers-enjoys,
+.average-daily-load {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.number-persons {
+  text-align: center;
+  color: #21be4a;
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 6px;
+  margin-top: 10px;
+}
+.text-number-persons {
+  color: #000;
+  font-weight: 550;
+}
+.line-under {
+  width: 100%;
+  height: 6px;
+  background-color: #e8e8e8;
+}
+.text-content-statistics {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/*Статистика посещаемости клиентов*/
+.subscription-block-position,
+.bloc-gender-customers,
+.bloc-gender-customers-time,
+.bloc-revenue-chart {
+  margin-top: 100px;
+  margin-left: -33%;
+  width: 160%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gender-customers {
+  font-size: 23px;
+  font-weight: 550;
+}
+.bloc-gender-customers {
+  margin-top: 50px;
+}
+.circlestat {
+  margin-top: 0px;
+  margin-left: -10px;
+  font-weight: 700;
+  font-size: 80px;
+}
+.color-statistics-man {
+  color: #5a81f1;
+  margin-left: 0px;
+}
+.color-statistics-woman {
+  color: #dd5857;
+  margin-left: 0px;
+}
+.circliful {
+  position: relative;
+}
+.circle-text,
+.circle-info,
+.circle-text-half,
+.circle-info-half {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+}
+.text-attendance-statistics {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  margin-top: -40px;
+}
+.color-middle-age-statistics {
+  color: #30bf49;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+#myLegend {
+  margin-top: 10px;
+  margin-left: -20px;
+}
+.text-customer-age {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 40px;
+  margin-top: -40px;
+}
+.time-bar {
+  list-style-type: none;
+  border: 0px solid #dee2e6 !important;
+  margin-top: 40px;
+}
+.time-bar li {
+  font-family: "Trebuchet MS", "Lucida Sans";
+  padding-left: 10px;
+  margin-bottom: 15px;
+  border-left: 25px solid #f05d22;
+  box-shadow: 1px -1px 5px 0 rgba(0, 0, 0, 0.1),
+    -2px -2px 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1),
+    -2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  color: #000;
+  transition: 0.2s all linear;
+}
+.time-bar li:nth-child(1) {
+  border-color: #f3545e;
+}
+.time-bar li:nth-child(2) {
+  border-color: #f2fb2b;
+}
+.time-bar li:nth-child(3) {
+  border-color: #4ee028;
+}
+.time-bar li:nth-child(4) {
+  border-color: #479bce;
+}
+.time-bar li:nth-child(5) {
+  border-color: #e89126;
+}
+.time-bar li:nth-child(6) {
+  border-color: #432bd1;
+}
+.time-bar li:nth-child(7) {
+  border-color: #d52cf4;
+}
+.time-bar li:nth-child(8) {
+  border-color: #47dcd5;
+}
+.time-bar li:hover {
+  border-left: 25px solid transparent;
+}
+.time-bar li:nth-child(1):hover {
+  border-right: 25px solid #f3545e;
+}
+.time-bar li:nth-child(2):hover {
+  border-right: 25px solid #f2fb2b;
+}
+.time-bar li:nth-child(3):hover {
+  border-right: 25px solid #4ee028;
+}
+.time-bar li:nth-child(4):hover {
+  border-right: 25px solid #479bce;
+}
+.time-bar li:nth-child(5):hover {
+  border-right: 25px solid #e89126;
+}
+.time-bar li:nth-child(6):hover {
+  border-right: 25px solid #432bd1;
+}
+.time-bar li:nth-child(7):hover {
+  border-right: 25px solid #d52cf4;
+}
+.time-bar li:nth-child(8):hover {
+  border-right: 25px solid #47dcd5;
+}
+.myChart-visit-time-schedule {
+  width: 100%;
+  height: auto;
+}
+.bloc-gender-customers-time {
+  margin-top: 0px;
+}
+/*Выручка*/
+.bloc-revenue-chart {
+  margin-top: 100px;
+  margin-left: -33%;
+}
+.g {
+  border: solid 4px #dd5857;
+}

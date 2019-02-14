@@ -1,0 +1,69 @@
+<div class="container-fluid boxesOfContent" id="settingsButtonBox">
+  <div class="row">
+    <div class="col-3 boxForButtonsSettings">
+      <div class="blockOfLeftList">
+        <div class="buttonsInBoxSettings">
+          <a
+            [routerLink]="['/organization/settings/general']"
+            routerLinkActive="active"
+            class="buttonBoxSetting"
+            id="buttonSettingsDefault"
+          >
+            <span>Основные параметры</span>
+          </a>
+
+          <a
+            [routerLink]="['/organization/settings/description']"
+            routerLinkActive="active"
+            class="buttonBoxSetting"
+            id="buttonSettingsDescription"
+          >
+            <span>Описание организации</span>
+          </a>
+
+          <a
+            [routerLink]="['/organization/settings/services']"
+            routerLinkActive="active"
+            class="buttonBoxSetting"
+            id="buttonSettingsService"
+          >
+            <span>Услуги и направления</span>
+          </a>
+
+          <a
+            [routerLink]="['/organization/settings/contact']"
+            routerLinkActive="active"
+            class="buttonBoxSetting"
+            id="buttonSettingsContact"
+          >
+            <span>Контактные данные</span>
+          </a>
+
+          <a
+            [routerLink]="['/organization/settings/subscription']"
+            routerLinkActive="active"
+            class="buttonBoxSetting"
+            id="buttonSettingsAbonement"
+          >
+            <span>Абонементы</span>
+          </a>
+
+          <a
+            [routerLink]="['/organization/settings/images']"
+            routerLinkActive="active"
+            class="buttonBoxSetting"
+            id="buttonSettingsPhoto"
+          >
+            <span>Фотографии</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-9 blockInBoxOfSettings">
+      <div class="boxOfSelectedSettings " id="buttonSettingsDefaultBox">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

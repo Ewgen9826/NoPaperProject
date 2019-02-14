@@ -1,0 +1,65 @@
+/*Основные параметры*/
+.boxOfSelectedSettings {
+  display: none;
+}
+.selectedBoxOfSelectedSettings {
+  display: flex;
+}
+.blockOfLeftList {
+  width: 100%;
+}
+#formOfDefaulSettings {
+  width: 100%;
+}
+.firstColumnDefaultSettings {
+  padding-left: 0px;
+}
+.containerForPhotoBlock {
+  display: flex;
+  justify-content: center;
+}
+.photoBlockOfOrganization {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+}
+.photoOrganization {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  background-color: #f1f1f1;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 5px white solid;
+}
+.newPhotoButtonsettiings {
+  position: absolute;
+  z-index: 111;
+  bottom: -5px;
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  opacity: 0;
+  font-size: 22px;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  background-color: #21be4a;
+  color: white;
+}
+.photoOrganization:hover .newPhotoButtonsettiings {
+  opacity: 1;
+}
+.newPhotoButtonsettiings:hover {
+  background-color: #269e44;
+}
+.secondColumnDefaultSettings {
+  padding-right: 0px;
+}

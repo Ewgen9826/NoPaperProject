@@ -1,0 +1,152 @@
+.footer {
+  margin-top: 80px;
+  background: linear-gradient(to bottom, #181f22, #3e4a4f);
+}
+.pos-footer {
+  padding-top: 5%;
+}
+
+/*------------bblock1------------*/
+div.footer-block1 > div > span {
+  font-size: 14px;
+  color: #e7e8e8;
+  text-align: center;
+}
+.indent-block1 {
+  margin-top: 10px;
+}
+/*Иконки*/
+.block-network {
+  height: 47px;
+  width: 47px;
+  background-color: #fff;
+}
+/*Vk*/
+.fa-vk {
+  color: #272727;
+  font-size: 30px;
+  padding: 8px 0px 0px 6px;
+}
+.Vk:hover .fa-vk {
+  color: white;
+}
+.Vk:hover {
+  background-color: #4a76a8;
+}
+/*Instagram*/
+.fa-instagram {
+  color: #272727;
+  font-size: 30px;
+  padding: 8px 0px 0px 10px;
+}
+.Instagram:hover .fa-instagram {
+  color: white;
+}
+.Instagram:hover {
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(255, 255, 0, 1) 1%,
+    rgba(255, 255, 0, 1) 6%,
+    rgba(255, 52, 202, 1) 80%,
+    rgba(255, 0, 255, 1) 99%,
+    rgba(0, 0, 255, 1) 100%
+  ); /* ff3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    color-stop(1%, rgba(255, 255, 0, 1)),
+    color-stop(6%, rgba(255, 255, 0, 1)),
+    color-stop(80%, rgba(255, 52, 202, 1)),
+    color-stop(99%, rgba(255, 0, 255, 1)),
+    color-stop(100%, rgba(0, 0, 255, 1))
+  ); /* safari4+,chrome */
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 0, 1) 1%,
+    rgba(255, 255, 0, 1) 6%,
+    rgba(255, 52, 202, 1) 80%,
+    rgba(255, 0, 255, 1) 99%,
+    rgba(0, 0, 255, 1) 100%
+  ); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(
+    45deg,
+    rgba(255, 255, 0, 1) 1%,
+    rgba(255, 255, 0, 1) 6%,
+    rgba(255, 52, 202, 1) 80%,
+    rgba(255, 0, 255, 1) 99%,
+    rgba(0, 0, 255, 1) 100%
+  ); /* opera 11.10+ */
+  background: -ms-linear-gradient(
+    45deg,
+    rgba(255, 255, 0, 1) 1%,
+    rgba(255, 255, 0, 1) 6%,
+    rgba(255, 52, 202, 1) 80%,
+    rgba(255, 0, 255, 1) 99%,
+    rgba(0, 0, 255, 1) 100%
+  ); /* ie10+ */
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 0, 1) 1%,
+    rgba(255, 255, 0, 1) 6%,
+    rgba(255, 52, 202, 1) 80%,
+    rgba(255, 0, 255, 1) 99%,
+    rgba(0, 0, 255, 1) 100%
+  ); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', endColorstr='#ffff00',GradientType=1 ); /* ie6-9 */
+}
+/*Facebook*/
+.fa-facebook-f {
+  color: #272727;
+  font-size: 30px;
+  padding: 8px 0px 0px 15px;
+}
+.Facebook:hover .fa-facebook-f {
+  color: white;
+}
+.Facebook:hover {
+  background-color: #49659f;
+}
+/*Twitter*/
+.fa-twitter {
+  color: #272727;
+  font-size: 30px;
+  padding: 8px 0px 0px 8px;
+}
+.Twitter:hover .fa-twitter {
+  color: white;
+}
+.Twitter:hover {
+  background-color: #1da1f2;
+}
+
+/*------------bblock2------------*/
+.footer-block2 {
+  padding-top: 20px;
+  text-align: center;
+}
+.list-block2 {
+  color: #e7e8e8;
+  font-size: 14px;
+}
+.list-block2:hover {
+  font-weight: 600;
+  color: #fff;
+}
+
+/*------------bblock3------------*/
+.text-block3 span {
+  color: #e7e8e8;
+}
+.icon-block3 {
+  color: #21be4a;
+  font-size: 15px;
+}
+/*------------bblock4------------*/
+.footer-block4 {
+  text-align: center;
+  margin-top: 18px;
+  color: #e7e8e8;
+  font-size: 12px;
+  margin-bottom: 26px;
+}

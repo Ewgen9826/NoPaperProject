@@ -1,0 +1,119 @@
+.block-schedules {
+  margin-left: -33%;
+  margin-top: 170px;
+}
+.days-load {
+  color: #272727;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 13px;
+}
+.line {
+  position: relative;
+  width: 440px;
+  height: 5px;
+  background-color: #939393;
+  top: 0px;
+}
+.days-load:hover {
+  text-decoration: none;
+  color: #272727;
+}
+.nav-pills-day .days-load.active,
+.nav-pills-day .show > .nav-link {
+  font-size: 35px;
+  color: #21be4a;
+}
+#Monday,
+#Tuesday,
+#Wednesday,
+#Thursday,
+#Friday,
+#Saturday,
+#Sunday {
+  font-size: 30px;
+  color: #21be4a;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.text-about-the-bottom {
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  text-transform: none;
+  font-family: "Open Sans", sans-serif;
+}
+.text-organization-area,
+.text-show-for {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text-show-for {
+  margin-bottom: 0px;
+}
+.text-area {
+  width: 100%;
+  height: 45px;
+  background-color: #21be4a;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.text-maximum-load {
+  font-size: 13px;
+  color: #b5b5b5;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.col-person {
+  color: #21be4a;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.texy-col-person {
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+}
+.last-7-days,
+.last-month,
+.last-year {
+  font-weight: 600;
+  border: solid 1px #404040;
+  border-radius: 5px;
+  margin: 7px;
+  width: 100%;
+  height: 45px;
+  margin-left: 0px;
+  padding: 10px;
+  text-align: center;
+  color: #404040;
+  transition: all 0.3s ease;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: rgb(255, 255, 255);
+  background-color: #21be4a;
+  border: solid 1px #21be4a;
+}
+.last-year:hover,
+.last-month:hover,
+.last-7-days:hover {
+  color: #fff;
+  background-color: #21be4a;
+  transition: all 0.3s ease;
+  border: solid 1px #21be4a;
+}
+.myChart-last-7-days,
+.myChart-last-month,
+.myChart-last-year {
+  margin-top: 0px;
+}

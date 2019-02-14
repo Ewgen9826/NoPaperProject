@@ -1,0 +1,237 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-7">
+      <ul class="nav nav-pills-day mb-3" id="pills-day-tab" role="tablist">
+        <li class="nav-item">
+          <a
+            class="days-load active"
+            id="Monday-tab"
+            data-toggle="pill"
+            href="#Monday"
+            role="tab"
+            aria-controls="Monday"
+            aria-selected="true"
+            >ПН</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="days-load"
+            id="Tuesday-tab"
+            data-toggle="pill"
+            href="#Tuesday"
+            role="tab"
+            aria-controls="Tuesday"
+            aria-selected="false"
+            >ВТ</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="days-load"
+            id="Wednesday-tab"
+            data-toggle="pill"
+            href="#Wednesday"
+            role="tab"
+            aria-controls="Wednesday"
+            aria-selected="false"
+            >СР</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="days-load"
+            id="Thursday-tab"
+            data-toggle="pill"
+            href="#Thursday"
+            role="tab"
+            aria-controls="Thursday"
+            aria-selected="false"
+            >ЧТ</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="days-load"
+            id="Friday-tab"
+            data-toggle="pill"
+            href="#Friday"
+            role="tab"
+            aria-controls="Friday"
+            aria-selected="false"
+            >ПТ</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="days-load"
+            id="Saturday-tab"
+            data-toggle="pill"
+            href="#Saturday"
+            role="tab"
+            aria-controls="Saturday"
+            aria-selected="false"
+            >СБ</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="days-load"
+            id="Sunday-tab"
+            data-toggle="pill"
+            href="#Sunday"
+            role="tab"
+            aria-controls="Sunday"
+            aria-selected="false"
+            >ВС</a
+          >
+        </li>
+        <div class="line"></div>
+      </ul>
+      <div class="tab-content" id="pills-day-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="Monday"
+          role="tabpanel"
+          aria-labelledby="Monday-tab"
+        >
+          <span>Понедельник</span>
+          <p class="text-about-the-bottom">
+            cамый загруженный день недели
+          </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="Tuesday"
+          role="tabpanel"
+          aria-labelledby="Tuesday-tab"
+        >
+          <span>Вторник</span>
+          <p class="text-about-the-bottom">
+            cамый загруженный день недели
+          </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="Wednesday"
+          role="tabpanel"
+          aria-labelledby="Wednesday-tab"
+        >
+          <span>Среда</span>
+          <p class="text-about-the-bottom">
+            cамый загруженный день недели
+          </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="Thursday"
+          role="tabpanel"
+          aria-labelledby="Thursday-tab"
+        >
+          <span>Четверг</span>
+          <p class="text-about-the-bottom">
+            cамый загруженный день недели
+          </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="Friday"
+          role="tabpanel"
+          aria-labelledby="Friday-tab"
+        >
+          <span>Пятница</span>
+          <p class="text-about-the-bottom">
+            cамый загруженный день недели
+          </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="Saturday"
+          role="tabpanel"
+          aria-labelledby="Saturday-tab"
+        >
+          <span>Суббота</span>
+          <p class="text-about-the-bottom">
+            cамый загруженный день недели
+          </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="Sunday"
+          role="tabpanel"
+          aria-labelledby="Sunday-tab"
+        >
+          <span>Воскресенье</span>
+          <p class="text-about-the-bottom">
+            cамый загруженный день недели
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row block-schedules">
+    <div class="col-9">
+      <!--График-->
+      <div class="row">
+        <div class="col-12 schedule myChart-last-7-days">
+          <canvas
+            id="myChart-last-7-days"
+            baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            [colors]="barColors"
+          ></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div
+        class="nav flex-column nav-pills"
+        id="v-pills-tab"
+        role="tablist"
+        aria-orientation="vertical"
+      >
+        <a class="text-organization-area">Площадь организации</a>
+        <div class="text-area"><span>200 кв.м.</span></div>
+        <span class="text-maximum-load">Максимальная нагрузка</span>
+        <span class="col-person"
+          >300<span class="texy-col-person"> человек</span></span
+        >
+        <a class="text-show-for">Показать за</a>
+        <a
+          class="nav-link last-7-days active"
+          id="v-pills-last-7-days-tab"
+          data-toggle="pill"
+          href="#v-pills-last-7-days"
+          role="tab"
+          aria-controls="v-pills-last-7-days"
+          aria-selected="false"
+          >последние 7 дней</a
+        >
+        <a
+          class="nav-link last-month"
+          id="v-pills-last-month-tab"
+          data-toggle="pill"
+          href="#v-pills-last-month"
+          role="tab"
+          aria-controls="v-pills-last-month"
+          aria-selected="false"
+          >последний месяц</a
+        >
+        <a
+          class="nav-link last-year"
+          id="v-pills-last-year-tab"
+          data-toggle="pill"
+          href="#v-pills-last-year"
+          role="tab"
+          aria-controls="v-pills-last-year"
+          aria-selected="false"
+          >последний год</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

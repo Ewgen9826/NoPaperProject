@@ -1,0 +1,88 @@
+<div class="content">
+  <div class="d-flex justify-content-center header-text">
+    <h1>Вход в личный кабинет</h1>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <form
+        novalidate
+        class="col-xl-5 col-lg-6 col-md-7"
+        [formGroup]="loginForm"
+        (ngSubmit)="onSubmit()"
+      >
+        <div class="group-input">
+          <div
+            class="row justify-content-center align-items-center input-block"
+          >
+            <input
+              class="col-10 ml-auto"
+              type="text"
+              placeholder="Введите логин"
+              formControlName="emailOrPhone"
+            />
+            <!--Spinner-->
+            <div class="col-1">
+              <i *ngIf="false" class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+              <span *ngIf="false" class="sr-only">Loading...</span>
+              <!--Error Icon-->
+              <i
+                *ngIf="emailOrPhone.invalid && emailOrPhone.dirty"
+                class="fas fa-error fa-times"
+              ></i>
+              <!--Success Icon-->
+              <i *ngIf="emailOrPhone.valid" class="fas fa-success fa-check"></i>
+            </div>
+          </div>
+          <span
+            class="error-text"
+            *ngIf="emailOrPhone.invalid && emailOrPhone.dirty"
+            >Введите e-mail или номер телефона</span
+          >
+        </div>
+
+        <div class="group-input">
+          <div
+            class="row justify-content-center align-items-center input-block"
+          >
+            <input
+              class="col-10 ml-auto"
+              type="password"
+              placeholder="Введите пароль"
+              formControlName="password"
+            />
+            <!--Spinner-->
+            <div class="col-1">
+              <i *ngIf="false" class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+              <span *ngIf="false" class="sr-only">Loading...</span>
+              <!--Error Icon-->
+              <i
+                *ngIf="password.invalid && password.dirty"
+                class="fas fa-error fa-times"
+              ></i>
+              <!--Success Icon-->
+              <i *ngIf="password.valid" class="fas fa-success fa-check"></i>
+            </div>
+          </div>
+          <span *ngIf="password.invalid && password.dirty" class="error-text"
+            >Введите пароль</span
+          >
+        </div>
+
+        <div class="row justify-content-start save-date">
+          <div class="row justify-content-center col-3">
+            <label class="toggle-btn">
+              <input type="checkbox" />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+          <span class="align-items-center col-6">Запомнить мои данные</span>
+        </div>
+
+        <div class="row justify-content-center align-items-center login-btn">
+          <button type="submit" class="col-6">Войти</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="col-3 boxForButtonsAnalytics ">
+    <div class="buttonsInBoxAnalytics">
+      <a
+        [routerLink]="['/organization/analytics/attendance']"
+        routerLinkActive="active"
+        class="buttonBoxAnalytics"
+        id="buttonAttendance"
+      >
+        <span>Посещаемость</span>
+      </a>
+
+      <a
+        [routerLink]="['/organization/analytics/filling']"
+        routerLinkActive="active"
+        class="buttonBoxAnalytics"
+        id="buttonOrganizationLoad"
+      >
+        <span>Нагрузка организации</span>
+      </a>
+
+      <a
+        [routerLink]="['/organization/analytics/subscription']"
+        routerLinkActive="active"
+        class="buttonBoxAnalytics"
+        id="buttonSubscriptions"
+      >
+        <span>Абонементы</span>
+      </a>
+
+      <a
+        [routerLink]="['/organization/analytics/revenue']"
+        routerLinkActive="active"
+        class="buttonBoxAnalytics"
+        id="buttonRevenue"
+      >
+        <span>Выручка</span>
+      </a>
+    </div>
+  </div>
+  <div class="col-9 blockInBoxOfAnalytics">
+    <div class="boxOfSelectedAnalytics">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

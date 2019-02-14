@@ -1,0 +1,91 @@
+/* <!--Фотографии-->*/
+.sectionForPhotosInSettings {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 30px;
+}
+.onesPhotoInSettings {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: red;
+  border-radius: 5px;
+  clear: both;
+}
+.onesPhotoInSettings:hover .deleteThisPhoto {
+  opacity: 1;
+}
+
+.deleteThisPhoto {
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.deleteThisPhoto i {
+  font-size: 22px;
+}
+.addedPhotoInSettings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #dfdfdf;
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.addedPhotoInSettings:hover {
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+.addedPhotoInSettings > i {
+  color: #a7a7a7;
+  font-size: 72px;
+}
+
+.addedPhotoInSettings span {
+  font-size: 18px;
+}
+.onesPhotoInSettings img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.blockForAcceptButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.acceptButtonInSettings {
+  margin-top: 25px;
+  padding: 10px 45px 10px 45px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #21be4a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.acceptButtonInSettings:hover {
+  background-color: #269e44;
+  transition: 0.2s linear;
+}

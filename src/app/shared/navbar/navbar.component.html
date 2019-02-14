@@ -1,0 +1,148 @@
+<nav class="navbar-section">
+  <div class="background-opacity"></div>
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="menu-button menu-links">
+        <i class="fas fa-bars fa-1x"></i>
+      </div>
+
+      <div class="logo-block">
+        <a [routerLink]="['/home']">
+          <img src="assets/images/logo.png" />
+        </a>
+      </div>
+
+      <div class="links-block col-lg-7 row align-items-center">
+        <a href="#" class="button-link">Как это работает ?</a>
+        <a href="#" class="button-link">Организации</a>
+        <a href="#" class="button-link">Поиск</a>
+        <a href="#" class="button-link">Новости</a>
+        <a href="#" class="button-link">О нас</a>
+      </div>
+
+      <div class="menu-button menu-register">
+        <i class="fas fa-key fa-1x"></i>
+      </div>
+
+      <div
+        *ngIf="!isLogin"
+        class="register-block col-lg-3 col-md-auto row align-items-center"
+      >
+        <a
+          *ngIf="display.isLoginPage()"
+          [routerLink]="['/login']"
+          class="button-register"
+          >Войти</a
+        >
+        <a
+          *ngIf="display.isRegisterPage()"
+          [routerLink]="['/home']"
+          class="button-register"
+          >Регистрация</a
+        >
+      </div>
+
+      <!--Выпадающее меню-------------------------------------------------------------------------------------------------------->
+      <div class="menu-button menu-user">
+        <i class="fas fa-key fa-1x"></i>
+      </div>
+      <div
+        class="user-block active col-lg-2 col-md-auto row align-items-center dropdown-user"
+        id="dropdownMenuLink"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        *ngIf="isLogin"
+      >
+        <a href="" class="user">
+          <img src="assets/images/foto.png" class="border-user" alt="" />
+          <span class="name-user">Sport1</span>
+          <i class="expand fas fa-caret-down " id="expand"></i>
+        </a>
+        <div class="drop-down-list">
+          <div
+            class="dropdown-menu menu-cap"
+            aria-labelledby="dropdownMenuLink"
+          >
+            <ul class="list-unstyled list-inline-item ">
+              <li class="list-inline-item border-list">
+                <a
+                  class="block-menu"
+                  [routerLink]="['/organization/employees']"
+                >
+                  <img
+                    src="assets/images/employee.svg"
+                    alt=""
+                    class="icon-list"
+                  />
+                  <p>Сотрудники</p>
+                </a>
+              </li>
+              <li class="list-inline-item border-list">
+                <a class="block-menu" [routerLink]="['/organization/clients']">
+                  <img
+                    src="assets/images/clients.svg"
+                    alt=""
+                    class="icon-list"
+                  />
+                  <p>Клиенты</p></a
+                >
+              </li>
+              <li class="list-inline-item border-list">
+                <a
+                  class="block-menu"
+                  [routerLink]="['/organization/notifications']"
+                >
+                  <img
+                    src="assets/images/notification.svg"
+                    alt=""
+                    class="icon-list"
+                  />
+                  <p>Уведомления</p></a
+                >
+              </li>
+              <li class="list-inline-item border-list">
+                <a
+                  class="block-menu"
+                  [routerLink]="['/organization/analytics']"
+                >
+                  <img
+                    src="assets/images/analitics.svg"
+                    alt=""
+                    class="icon-list"
+                  />
+                  <p>Аналитика</p></a
+                >
+              </li>
+              <li class="list-inline-item border-list">
+                <a class="block-menu" [routerLink]="['/organization/settings']">
+                  <img
+                    src="assets/images/settings.svg"
+                    alt=""
+                    class="icon-list"
+                  />
+                  <p>Настройки</p></a
+                >
+              </li>
+              <li class="list-inline-item border-list">
+                <a
+                  class="block-menu"
+                  [routerLink]="['/login']"
+                  (click)="logout()"
+                >
+                  <img
+                    src="assets/images/output.svg"
+                    alt=""
+                    class="icon-list"
+                  />
+                  <p>Выйти</p></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Выпадающее меню-------------------------------------------------------------------------------------------------------->
+    </div>
+  </div>
+</nav>

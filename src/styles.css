@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.main{
+  text-align: center;
+  position: relative;
+}
+body, .wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  flex-grow: 1;
+}

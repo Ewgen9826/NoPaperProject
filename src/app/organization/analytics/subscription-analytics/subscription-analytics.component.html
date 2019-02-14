@@ -1,0 +1,117 @@
+<div class="container-fluid ">
+  <div class="row justify-content-around">
+    <div class="col-5 customers-enjoys">
+      <img src="assets/images/customers-enjoys.png" class="img-fluid" alt="" />
+      <span class="number-persons"
+        >600<span class="text-number-persons"> клиентов</span></span
+      >
+      <div class="line-under"></div>
+      <span class=" text-content-statistics">пользуются вашими услугами</span>
+    </div>
+    <div class="col-5 average-daily-load">
+      <img src="assets/images/average-daily-load.png" class="img-fluid" alt="" />
+      <span class="number-persons"
+        >7<span class="text-number-persons"> клиентов</span></span
+      >
+      <div class="line-under"></div>
+      <span class="text-content-statistics">средняя ежедневная нагрузка</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="subscription-block-position">
+      <span class="gender-customers ">Пол клиентов</span>
+    </div>
+    <div class="row bloc-gender-customers justify-content-center">
+      <div class="mr-5">
+        <img src="assets/images/gender-man.png" class="img-fluid" alt="" />
+      </div>
+      <div class="col-3">
+        <div
+          class="circlestat color-statistics-man"
+          data-dimension="170"
+          data-text="45%"
+          data-width="10"
+          data-fontsize="48"
+          data-percent="45"
+          data-fgcolor="#5A81F1"
+          data-bgcolor="#ddd"
+          data-fill="#fff"
+        ></div>
+        <div class="text-attendance-statistics">
+          <span>клиентов мужчин</span>
+        </div>
+      </div>
+      <div class="mr-5">
+        <img src="assets/images/gender-woman.png" class="img-fluid" alt="" />
+      </div>
+      <div class="col-3">
+        <div
+          class="circlestat color-statistics-woman"
+          data-dimension="170"
+          data-text="55%"
+          data-width="10"
+          data-fontsize="48"
+          data-percent="55"
+          data-fgcolor="#DD5857"
+          data-bgcolor="#ddd"
+          data-fill="#fff"
+        ></div>
+        <div class="text-attendance-statistics">
+          <span>клиентов женщин</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscription-block-position">
+      <span class="gender-customers">Возраст клиентов</span>
+    </div>
+    <div class="row bloc-gender-customers justify-content-center">
+      <div class="col-5">
+        <canvas id="customer-age-circular-chart"></canvas>
+      </div>
+      <div class="col-2">
+        <div id="myLegend"></div>
+      </div>
+      <div class="col-5">
+        <div
+          class="circlestat color-middle-age-statistics"
+          data-dimension="250"
+          data-text="23"
+          data-width="15"
+          data-fontsize="68"
+          data-percent="23"
+          data-fgcolor="#2CB443"
+          data-bgcolor="#ddd"
+          data-fill="#fff"
+        ></div>
+        <div class="text-customer-age">
+          <span>средний возраст клиента</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscription-block-position ">
+      <span class="gender-customers ">Время посещения</span>
+    </div>
+    <div class="row bloc-gender-customers-time justify-content-center">
+      <div class="col-9">
+        <!--График-->
+        <div class="col-12 schedule myChart-visit-time-schedule">
+          <canvas id="myChart-visit-time-schedule"></canvas>
+        </div>
+      </div>
+      <div class="col-3">
+        <ul class="time-bar">
+          <li>7:00 - 9:00</li>
+          <li>9:00 - 11:00</li>
+          <li>11:00 - 14:00</li>
+          <li>14:00 - 17:00</li>
+          <li>17:00 - 19:00</li>
+          <li>19:00 - 21:00</li>
+          <li>21:00 - 00:00</li>
+          <li>00:00 - 7:00</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
