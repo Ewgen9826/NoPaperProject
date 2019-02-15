@@ -14,7 +14,7 @@
 
 .photoNewEmloeyers {
   display: flex;
-  background-image: url('/assets/images/photoNewEmloeyers.png');
+  background-image: url("/assets/images/photoNewEmloeyers.png");
   background-position: center;
   align-items: flex-end;
   cursor: pointer;
@@ -150,4 +150,17 @@ button.CreateNewEmployers > span {
 }
 .CreateNewEmployers:hover {
   background-color: #259e44;
+}
+button:disabled {
+  background: #4b515d;
+}
+button:disabled:hover {
+  background: #4b515d;
+  cursor: default;
+}
+input.ng-touched.ng-invalid {
+  border: solid #f44336 2px;
+}
+input.ng-touched.ng-valid {
+  border: solid var(--green-color) 2px;
 }

@@ -1,7 +1,7 @@
 export class OrganizationProfile {
-  companyName: string;
-  email: string;
-  phoneNumber: string;
-  userName: string;
-  token: string;
+  CompanyName: string;
+  Email: string;
+  PhoneNumber: string;
+  UserName: string;
+  Token?: string;
 }

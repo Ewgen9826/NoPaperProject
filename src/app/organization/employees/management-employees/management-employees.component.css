@@ -58,6 +58,7 @@
 .catalogContentСontrol {
   display: none;
   /*border: solid 2px black;*/
+  display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }

@@ -23,7 +23,8 @@
               "src/styles.css",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./src/shared/css/main.css",
-              "./src/shared/css/corousel-customize.css"
+              "./src/shared/css/corousel-customize.css",
+              "./src/shared/css/pikaday.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.slim.min.js",
@@ -31,7 +32,10 @@
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
               "./src/shared/js/corousel.js",
               "./src/shared/js/global.js",
-              "./src/shared/js/tabs.js"
+              "./src/shared/js/tabs.js",
+              "./src/shared/js/pikaday.js",
+              "./src/shared/js/customer-attendance-statistics.js",
+              "./src/shared/js/customer-age-circular-chart.js"
             ]
           },
           "configurations": {

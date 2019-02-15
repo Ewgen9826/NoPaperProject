@@ -35,7 +35,7 @@ export class AttendanceAnalyticsComponent implements OnInit {
   public barChartLabels: string[] = ["ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ", "ВС"];
   public barChartType = "bar";
   public barChartLegend = false;
-  public barChartData: any[] = [{ data: [320, 390, 450, 220, 320, 390, 450] }];
+  public barChartData: any[] = [{ data: [5, 4, 7, 6, 8, 8, 7] }];
   public barColors: any[] = [
     {
       backgroundColor: [

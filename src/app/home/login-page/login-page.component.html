@@ -20,6 +20,7 @@
               type="text"
               placeholder="Введите логин"
               formControlName="emailOrPhone"
+              [(ngModel)]="testLogin"
             />
             <!--Spinner-->
             <div class="col-1">
@@ -50,6 +51,7 @@
               type="password"
               placeholder="Введите пароль"
               formControlName="password"
+              [(ngModel)]="testPassword"
             />
             <!--Spinner-->
             <div class="col-1">
@@ -72,7 +74,7 @@
         <div class="row justify-content-start save-date">
           <div class="row justify-content-center col-3">
             <label class="toggle-btn">
-              <input type="checkbox" />
+              <input type="checkbox" checked="true" />
               <span class="toggle-slider"></span>
             </label>
           </div>

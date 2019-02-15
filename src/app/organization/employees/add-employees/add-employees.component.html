@@ -44,83 +44,131 @@
         </div>
       </div>
     </div>
-    <!--Должность-->
-    <div class="row">
-      <div class="col-lg-9">
-        <label
-          for="PositionNewEmpl"
-          class="PositionNewEmpl label-text-employers"
-          >Должность</label
-        ><br />
-        <input
-          type="text"
-          id="PositionNewEmpl"
-          placeholder="Введите должность сотрудника"
-        />
+    <form #myForm="ngForm">
+      <!--Должность-->
+      <div class="row">
+        <div class="col-lg-9">
+          <label
+            for="PositionNewEmpl"
+            class="PositionNewEmpl label-text-employers"
+            >Должность</label
+          ><br />
+          <input
+            ngModel
+            required
+            [(ngModel)]="employee.Position"
+            name="Position"
+            type="text"
+            id="PositionNewEmpl"
+            placeholder="Введите должность сотрудника"
+          />
+        </div>
       </div>
-    </div>
-    <!--Имя, Фамилия-->
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
-        <label for="NewNameNewEmpl" class="label-text-employers">Имя</label
-        ><br />
-        <input type="text" id="NewNameNewEmpl" placeholder="Введите имя" />
+      <!--Имя, Фамилия-->
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <label for="NewNameNewEmpl" class="label-text-employers">Имя</label
+          ><br />
+          <input
+            ngModel
+            required
+            [(ngModel)]="employee.FirstName"
+            name="FirstName"
+            type="text"
+            id="NewNameNewEmpl"
+            placeholder="Введите имя"
+          />
+        </div>
+        <div class="col-lg-6">
+          <label for="NewSurnameNewEmpl" class="label-text-employers"
+            >Фамилия</label
+          ><br />
+          <input
+            ngModel
+            required
+            [(ngModel)]="employee.LastName"
+            name="LastName"
+            type="text"
+            id="NewSurnameNewEmpl"
+            placeholder="Введите фамилию"
+          />
+        </div>
       </div>
-      <div class="col-lg-6">
-        <label for="NewSurnameNewEmpl" class="label-text-employers"
-          >Фамилия</label
-        ><br />
-        <input
-          type="text"
-          id="NewSurnameNewEmpl"
-          placeholder="Введите фамилию"
-        />
+      <!--Номер телефлна, пароль-->
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <label for="NewPhoneNumberNewEmpl" class="label-text-employers"
+            >Номер телефона</label
+          ><br />
+          <input
+            ngModel
+            required
+            [(ngModel)]="employee.PhoneNumber"
+            name="PhoneNumber"
+            type="text"
+            id="NewPhoneNumberNewEmpl"
+            placeholder="Введите номер"
+          />
+        </div>
+        <div class="col-lg-6">
+          <label for="NewPasswordNewEpml" class="label-text-employers"
+            >Пароль</label
+          ><br />
+          <input
+            ngModel
+            required
+            [(ngModel)]="employee.Password"
+            name="Password"
+            type="password"
+            id="NewPasswordNewEpml"
+            placeholder="Пароль"
+          />
+        </div>
       </div>
-    </div>
-    <!--Номер телефлна, пароль-->
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
-        <label for="NewPhoneNumberNewEmpl" class="label-text-employers"
-          >Номер телефона</label
-        ><br />
-        <input
-          type="text"
-          id="NewPhoneNumberNewEmpl"
-          placeholder="Введите номер"
-        />
+      <!--Email-->
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <label for="NewEmailNewEmpl" class="label-text-employers">Email</label
+          ><br />
+          <input
+            ngModel
+            required
+            email
+            [(ngModel)]="employee.Email"
+            name="Email"
+            type="email"
+            id="NewEmailNewEmpl"
+            placeholder="Введите email"
+          />
+        </div>
+        <div class="col-lg-6">
+          <label for="NewConfirmPasswordNewEpml" class="label-text-employers"
+            >Повторите пароль</label
+          ><br />
+          <input
+            ngModel
+            required
+            [(ngModel)]="employee.ConfirmPassword"
+            name="ConfirmPassword"
+            type="password"
+            id="NewConfirmPasswordNewEpml"
+            placeholder="Повторите пароль"
+          />
+        </div>
       </div>
-      <div class="col-lg-6">
-        <label for="NewPasswordNewEpml" class="label-text-employers"
-          >Пароль</label
-        ><br />
-        <input type="password" id="NewPasswordNewEpml" placeholder="Пароль" />
+      <!--Кнопка создать-->
+      <div class="row justify-content-center">
+        <div class="">
+          <button
+            [disabled]="myForm.invalid"
+            (click)="addEmployee()"
+            type="submit"
+            class="CreateNewEmployers"
+          >
+            <span>Создать</span>
+          </button>
+        </div>
       </div>
-    </div>
-    <!--Email-->
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
-        <label for="NewEmailNewEmpl" class="label-text-employers">Email</label
-        ><br />
-        <input type="email" id="NewEmailNewEmpl" placeholder="Введите email" />
-      </div>
-      <div class="col-lg-6">
-        <label for="NewConfirmPasswordNewEpml" class="label-text-employers"
-          >Повторите пароль</label
-        ><br />
-        <input
-          type="password"
-          id="NewConfirmPasswordNewEpml"
-          placeholder="Повторите пароль"
-        />
-      </div>
-    </div>
-    <!--Кнопка создать-->
-    <div class="row justify-content-center">
-      <div class="">
-        <button type="submit" class="CreateNewEmployers">
-          <span>Создать</span>
-        </button>
-      </div>
-    </div>
+    </form>
   </div>
 </div>

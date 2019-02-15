@@ -6,7 +6,6 @@ export class DisplayContentService {
   constructor(private router: Router) {}
 
   isDisplayFooter(): boolean {
-    console.log(this.router.url);
     const url = this.router.url;
     if (url === "/login" || url === "/register") {
       return false;

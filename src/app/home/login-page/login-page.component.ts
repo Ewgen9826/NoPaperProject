@@ -1,6 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
+import { AuthenticationService } from "src/app/shared/services/authentication.service";
+import { first } from "rxjs/operators";
 
 @Component({
   selector: "nopaper-login-page",
@@ -12,7 +14,11 @@ export class LoginPageComponent implements OnInit {
   emailOrPhone: FormControl;
   password: FormControl;
 
-  constructor(private router: Router) {}
+  public testLogin = "Organization@mail.ru";
+  public testPassword = "testing123";
+  constructor(
+    private router: Router //private authService: AuthenticationService
+  ) {}
 
   ngOnInit() {
     this.createFormControls();
@@ -33,9 +39,23 @@ export class LoginPageComponent implements OnInit {
     });
   }
   onSubmit() {
-    if (this.loginForm.valid && this.emailOrPhone.value) {
-      localStorage.setItem("currentUser", this.emailOrPhone.value);
-      this.router.navigate(["organization"]);
+    if (this.loginForm.invalid) {
+      return;
+    }
+    /*this.authService
+      .login(this.emailOrPhone.value, this.password.value)
+      .subscribe(data => {
+        this.router.navigate(["/organization"]);
+      },
+        error => {
+          console.log(error);
+      });*/
+    if (
+      this.emailOrPhone.value === "Organization@mail.ru" &&
+      this.password.value === "testing123"
+    ) {
+      localStorage.setItem("currentUser", "Organization@mail.ru");
+      this.router.navigate(["/organization"]);
     }
   }
 }
