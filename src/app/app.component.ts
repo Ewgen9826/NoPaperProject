@@ -1,11 +1,13 @@
 import { Component } from "@angular/core";
 import { DisplayContentService } from "./shared/services/display-content.service";
 import { AuthenticationService } from "./shared/services/authentication.service";
+import { fadeAnimation } from "./animation";
 
 @Component({
   selector: "nopaper-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  styleUrls: ["./app.component.css"],
+  animations: [fadeAnimation]
 })
 export class AppComponent {
   constructor(

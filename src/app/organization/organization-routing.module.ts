@@ -30,6 +30,7 @@ const routes: Routes = [
       {
         path: "employees",
         component: EmployeesComponent,
+        data: { animation: "isEmployees" },
         children: [
           {
             path: "all",
@@ -56,18 +57,19 @@ const routes: Routes = [
       {
         path: "clients",
         component: ClientsComponent,
-        data: { animation: "isRight" }
+        data: { animation: "isClients" }
       },
 
       {
         path: "notifications",
         component: NotificationsComponent,
-        data: { animation: "isLeft" }
+        data: { animation: "isNotifications" },
       },
 
       {
         path: "analytics",
         component: AnalyticsComponent,
+        data: { animation: "isAnalytics" },
         children: [
           {
             path: "attendance",
@@ -95,6 +97,7 @@ const routes: Routes = [
       {
         path: "settings",
         component: SettingsComponent,
+        data: { animation: "isSettings" },
         children: [
           {
             path: "general",
