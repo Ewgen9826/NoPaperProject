@@ -1,3 +1,6 @@
+p{
+  margin-bottom:0;
+}
 .header {
   height: 100vh;
   width: 100%;
@@ -155,9 +158,6 @@
   background-image: url(/assets/images/organization-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
-  padding-top: 120px;
-  margin-bottom: 100px;
 }
 
 .organization-block row {
@@ -241,7 +241,6 @@
 /*More details*/
 .more-deatails {
   margin-top: 60px;
-  padding-bottom: 50px;
 }
 .more-deatails a {
   font-size: 16px;
@@ -286,7 +285,7 @@
 }
 .shool-section .row .image-organization a {
   position: absolute;
-  left: 89%;
+  left: 88.5%;
   bottom: 0px;
   display: block;
   float: right;
@@ -374,7 +373,7 @@
 
 /*------------------------------ABOUT SECTION----------------------------*/
 .about-section .container .about-description {
-  padding: 80px 0;
+  padding-top: 40px;
 }
 
 .about-section .container .description {
@@ -400,3 +399,145 @@
   background: #259e44;
   align-self: center;
 }
+
+
+/*----------------------------ADAPTABILITY------------------------------*/
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+ 
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+.cart-section {
+    margin-top: 0;
+  }
+.shool-section .row .image-organization a {
+   
+    left: 86.4%;
+    top: 85%;
+    bottom: auto;
+  
+}
+.shool-section .row .description-organization {
+ 
+  padding: 0px 40px;
+}
+
+}
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+.col-4{
+  padding: 10px; 
+}
+  
+.card-section{
+  margin-top: 40px;
+}
+.cart-section {
+  margin-top: 2.75rem;
+}
+.card p{
+  padding: 8px;
+  
+}
+.more-deatails {
+  margin-top: 40px;
+  padding-bottom: 0;
+}
+.shool-section .row .description-organization {
+ 
+  padding: 0 30px;
+}
+.shool-section .row .description-organization p{
+  font-size: 12px;
+}
+.shool-section .row .image-organization a{
+  left: 81.6%;
+}
+  
+}
+  
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.cart-section{
+    margin-top: 2.75rem;
+}
+.card-chain::before {
+  display: none;
+}
+.card-chain::after {
+  display: none;
+}
+.card-section-col{
+  margin-top: 40px;
+
+}
+.card p{
+  padding: 0px 10px 20px 10px;
+}
+.shool-section .row .description-organization {
+  padding: 40px 0;
+}
+.shool-section .row .image-organization a{
+ 
+  left: 87.5%;
+}
+.about-section .container .description p {
+  margin-top: 30px;
+  
+}
+.about-logo{
+  display: flex;
+  justify-content: center;
+}
+.more-shool{
+  margin-top:0;
+
+}
+.news-section .new .line {
+  display: none;
+  
+}
+}
+
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+.basic-header p{
+    text-align: center;
+
+  }
+.about-section .container .description p {
+    margin-top: 30px;
+    
+}
+.about-logo{
+    display: flex;
+    justify-content: center;
+}
+.news-section .new .line {
+  display: none;
+  
+}
+.shool-section .row .image-organization a{
+ 
+  left: 84%;
+}
+.organization-name h1{
+  font-size: 14px;
+
+}
+
+.organization-description {
+  padding: 40px 0;
+}
+
+}
+
