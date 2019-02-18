@@ -24,7 +24,8 @@
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./src/shared/css/main.css",
               "./src/shared/css/corousel-customize.css",
-              "./src/shared/css/pikaday.css"
+              "./src/shared/css/pikaday.css",
+              "./node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.slim.min.js",

@@ -1,6 +1,6 @@
 var myCanvas = document.getElementById("customer-age-circular-chart");
 myCanvas.width = 380;
-myCanvas.height = 380;
+myCanvas.height = 380 ;
 var ctx = myCanvas.getContext("2d");
 function drawPieSlice(ctx,centerX, centerY, radius, startAngle, endAngle, color ){
 	ctx.fillStyle = color;

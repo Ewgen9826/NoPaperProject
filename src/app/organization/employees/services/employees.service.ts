@@ -4,6 +4,7 @@ import { Employee } from "../model/employee";
 
 const employees: Array<Employee> = [
   new Employee(
+    1,
     "Position1",
     "Name1",
     "LastName1",
@@ -13,6 +14,7 @@ const employees: Array<Employee> = [
     "password1"
   ),
   new Employee(
+    2,
     "Position2",
     "Name2",
     "LastName2",
@@ -22,6 +24,7 @@ const employees: Array<Employee> = [
     "password2"
   ),
   new Employee(
+    3,
     "Position3",
     "Name3",
     "LastName3",

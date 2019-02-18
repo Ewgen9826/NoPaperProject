@@ -16,7 +16,7 @@ import { OrganizationModule } from "./organization/organization.module";
     AppRoutingModule,
     HomeModule,
     SharedModule,
-    OrganizationModule
+    OrganizationModule,
   ],
   providers: [DisplayContentService],
   bootstrap: [AppComponent]

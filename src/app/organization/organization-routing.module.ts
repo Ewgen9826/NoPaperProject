@@ -46,7 +46,10 @@ const routes: Routes = [
             path: "management",
             component: ManagementEmployeesComponent
           },
-
+          {
+            path: "update/:id",
+            component: AddEmployeesComponent
+          },
           {
             path: "**",
             redirectTo: "all"
@@ -63,7 +66,7 @@ const routes: Routes = [
       {
         path: "notifications",
         component: NotificationsComponent,
-        data: { animation: "isNotifications" },
+        data: { animation: "isNotifications" }
       },
 
       {
