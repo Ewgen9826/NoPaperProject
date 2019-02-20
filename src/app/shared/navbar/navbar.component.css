@@ -223,13 +223,8 @@ li.border-list > a > p {
 .border-list:hover .icon-list {
   filter: invert(100%) sepia(31%) saturate(0%) hue-rotate(94deg)
     brightness(112%) contrast(100%);
-<<<<<<< HEAD
 }
 
-
-=======
-<<<<<<< HEAD
-}
 @media(max-width: 1200px) {
 
   .register-block{
@@ -368,7 +363,3 @@ li.border-list > a > p {
   padding:10px 20px;
 }
 /* End Menu Account*/
-=======
-}
->>>>>>> 839437a9c7f19d83f55affc989f595584f931742
->>>>>>> 87ea3093f32bc5c8a8f4c1ebe85781f18ad7d76d
