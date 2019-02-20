@@ -159,14 +159,18 @@ a.user > i {
 }
 
 .drop-down-list {
+  top: 6%;
   position: fixed;
   right: 42%;
 }
 .menu-cap {
-  height: 72px;
+  height: 70px;
   padding: 0px 0px 0px 12px;
-  border-radius: 6px;
+  border-radius: 0px 0px 6px 6px;
   padding-left: 8px;
+  background: linear-gradient(to bottom, #3e4a4f, #616769);
+
+  border: none;
 }
 .border-list {
   border-right: 1px solid rgba(27, 27, 27, 0.1);
@@ -186,17 +190,17 @@ a.user > i {
 li.border-list > a > p {
   font-size: 13px;
   transition: 0s;
-  color: black;
+  color: #fff;
 }
 /*Наведение на список*/
 .border-list:hover {
   background-color: #21be4a;
 }
 .border-list:nth-child(1):hover {
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 0px 0px 0px 5px;
 }
 .border-list:nth-child(6):hover {
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 0px 5px 0px;
 }
 .border-list:hover .icon-list {
   color: #fff;
@@ -211,6 +215,8 @@ li.border-list > a > p {
   padding-top: 10px;
   width: 30%;
   transition: 0s;
+  filter: invert(100%) sepia(31%) saturate(0%) hue-rotate(94deg)
+  brightness(112%) contrast(100%);
 }
 .border-list:hover .icon-list {
   filter: invert(100%) sepia(31%) saturate(0%) hue-rotate(94deg)
