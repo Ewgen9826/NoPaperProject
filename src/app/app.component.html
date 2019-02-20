@@ -1,6 +1,9 @@
-<nopaper-navbar [isLogin]="authService.getUser()"></nopaper-navbar>
+<div class="wrapper">
+  <nopaper-navbar [isLogin]="authService.getUser()"></nopaper-navbar>
 
-<main class="main" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
-  <router-outlet class="router" #o="outlet"></router-outlet>
-</main>
-<!--<nopaper-footer *ngIf="display.isDisplayFooter()"></nopaper-footer>-->
+  <main class="main" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+    <router-outlet class="router" #o="outlet"></router-outlet>
+  </main>
+
+  <!--<nopaper-footer *ngIf="display.isDisplayFooter()"></nopaper-footer>-->
+</div>

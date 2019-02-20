@@ -1,11 +1,12 @@
 import { Component } from "@angular/core";
 import { RouterOutlet, Router } from "@angular/router";
-import { slider } from "./route-animations";
+import { sliderAnimation } from "../animation";
+
 @Component({
   selector: "nopaper-organization",
   templateUrl: "./organization.component.html",
   styleUrls: ["./organization.component.css"],
-  animations: [slider]
+  animations: [sliderAnimation]
 })
 export class OrganizationComponent {
   constructor(public router: Router) {}

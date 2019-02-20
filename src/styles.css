@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files*/ 
 .router ~ * {
   position: absolute;
   height: 100%;
@@ -7,4 +7,11 @@
 /*Fixed toast*/
 #toast-container > div {
   opacity: 1;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  flex-grow: 1;
 }
