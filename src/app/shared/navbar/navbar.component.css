@@ -192,7 +192,7 @@ li.border-list > a > p {
   transition: 0s;
   color: #fff;
 }
-/*Наведение на список*/
+/*Наведение на список!!!*/
 .border-list:hover {
   background-color: #21be4a;
 }
