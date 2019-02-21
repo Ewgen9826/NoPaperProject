@@ -161,9 +161,9 @@ a.user > i {
 }
 
 .drop-down-list {
-  top: 6%;
   position: fixed;
-  right: 42%;
+  top: 36px;
+  
 }
 .menu-cap {
   height: 70px;
@@ -171,7 +171,7 @@ a.user > i {
   border-radius: 0px 0px 6px 6px;
   padding-left: 8px;
   background: linear-gradient(to bottom, #3e4a4f, #616769);
-
+ 
   border: none;
 }
 .border-list {
@@ -225,65 +225,7 @@ li.border-list > a > p {
     brightness(112%) contrast(100%);
 }
 
-@media(max-width: 1200px) {
 
-  .register-block{
-      display: none;
-  }
-  
-  .navbar-section .menu-register{
-      display: block;
-  }
-  
-  .navbar-section .container .row{
-      justify-content: space-around;
-  }
-}
-@media (max-width:996px){
-  html{
-      font-size: 14px;
-  }
-  .links-block{
-     display: none;
-  }
-  .register-block{
-      display: none;
-  }
-  .navbar-section .menu-links{
-      display: block;
-  }
-  .navbar-section .menu-toggle ul li a{
-    width:50%;
-  }
-  .navbar-section .menu-account{
-    width:35%;
-  }
-}
-@media (max-width:768px){
-  html{
-      font-size: 12px;
-  }
-  .navbar-section .menu-toggle ul li a{
-    width:60%;
-  }
-  .navbar-section .menu-account{
-    width:40%;
-  }
-}
-@media (max-width:575.98px){
-  .menu-links{
-    margin-left:15px;
-  }
-  .menu-register{
-    margin-right:15px;
-  }
-  .navbar-section .menu-toggle ul li a{
-    width:90%;
-  }
-  .navbar-section .menu-account{
-    width:80%;
-  }
-}
 /* Start Menu Link*/
 .menu-toggle{
   z-index:-1;
@@ -363,3 +305,65 @@ li.border-list > a > p {
   padding:10px 20px;
 }
 /* End Menu Account*/
+@media(max-width: 1200px) {
+
+  .register-block{
+      display: none;
+  }
+  
+  .navbar-section .menu-register{
+      display: block;
+  }
+  
+  .navbar-section .container .row{
+      justify-content: space-around;
+  }
+}
+@media (max-width:996px){
+  html{
+      font-size: 14px;
+  }
+  .links-block{
+     display: none;
+  }
+  .register-block{
+      display: none;
+  }
+  .navbar-section .menu-links{
+      display: block;
+  }
+  .navbar-section .menu-toggle ul li a{
+    width:50%;
+  }
+  .navbar-section .menu-account{
+    width:35%;
+  }
+}
+@media (max-width:768px){
+  html{
+      font-size: 12px;
+  }
+  .navbar-section .menu-toggle ul li a{
+    width:60%;
+  }
+  .navbar-section .menu-account{
+    width:40%;
+  }
+  .user-block {
+    display: none;
+  }
+}
+@media (max-width:575.98px){
+  .menu-links{
+    margin-left:15px;
+  }
+  .menu-register{
+    margin-right:15px;
+  }
+  .navbar-section .menu-toggle ul li a{
+    width:90%;
+  }
+  .navbar-section .menu-account{
+    width:80%;
+  }
+}

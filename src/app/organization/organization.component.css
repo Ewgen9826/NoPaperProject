@@ -133,3 +133,29 @@
     brightness(112%) contrast(100%);
   color: #fff;
 }
+
+
+
+
+@media only screen and (max-width:1200px){
+  
+}
+
+@media only screen and (max-width:992px){
+
+}
+
+@media only screen and (max-width:768px){
+  .buttonsInControlPanel {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:576px){
+ 
+}
+
+@media only screen and (max-width:400px){
+
+}
+
