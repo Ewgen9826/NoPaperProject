@@ -42,8 +42,6 @@
   font-size: 16px;
   padding: 5px 10px 5px 10px;
 }
-.textAreaInSettings:focus,
-#AddNewDirection:focus,
-.textAreaNewAbonement:focus {
+.textAreaInSettings:focus {
   border: 2px solid rgba(33, 190, 75, 0.7);
 }
