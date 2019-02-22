@@ -3,10 +3,9 @@
   display: flex;
   justify-content: center;
 }
-.blockForListAbonements {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
+.nameOfSection{
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 .elementOfListAbonements {
   display: flex;
@@ -158,4 +157,43 @@ div.section-card-subscription > span {
   font-size: 25px;
   color: #fff;
   font-weight: 700;
+}
+.blockForAcceptButton{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+.labelForInput{
+  margin-top: 0px;
+}
+.selectOfInformation{
+  /* margin-bottom: -60px; */
+}
+.inputOfInformation{
+  margin-left: 15px;
+}
+.AddNewAbonementCosts, .labelForInputPeriod{
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 5px; 
+}
+@media only screen and (max-width:1200px){
+   
+}
+@media only screen and (max-width:992px){
+  .labelForInput, .selectOfInformation, .optionOfSelects{
+    font-size: 14px;
+  }
+ 
+}
+@media only screen and (max-width:768px){
+ 
+}
+@media only screen and (max-width:576px){
+
+}
+
+@media only screen and (max-width:400px){
+  
 }

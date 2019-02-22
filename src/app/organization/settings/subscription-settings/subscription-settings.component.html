@@ -1,212 +1,221 @@
-<div class="contentDescriptOfOrg">
+
   <div class="blockForNameSectionNewAbonement">
     <div class="nameOfSection"><span>Направления работы организации</span></div>
   </div>
-  <div class="blockForListAbonements selectbox">
-    <div class="">
-      <label class="labelForInput" for="selectOfInformation">Вид занятий:</label
-      ><br />
-      <select class="selectOfInformation">
-        <option class="optionOfSelects" value="2-">Беларусь</option>
-        <option class="optionOfSelects" value="3-4">Россия</option>
-        <option class="optionOfSelects" value="5-6">Хохлома</option>
-        <option class="optionOfSelects" value="7-8">Польша</option>
-        <option class="optionOfSelects" value="больше 9">Германия</option>
-      </select>
-      <label class="labelForInput" for="selectOfInformation">Срок действия абонимента:</label><br />
-      <select class="selectOfInformation">
-        <option class="optionOfSelects" value="2-">Минск</option>
-        <option class="optionOfSelects" value="3-4">Брест</option>
-        <option class="optionOfSelects" value="5-6">Пинск</option>
-        <option class="optionOfSelects" value="7-8">Дрогичин</option>
-        <option class="optionOfSelects" value="больше 9">Херичин</option>
-      </select>
-      <div class="row">
-        <div class="col-5">
-          <label class="labelForInput" for="AddNewAbonementCost"
-            >Стоимость:</label
-          ><br />
-          <input type="text" class="inputOfInformation" name="AddNewDirection" id="AddNewAbonementCosts" />
-        </div>
-        <div class="col-5">
-          <label class="labelForInput" for="AddNewAbonement1">Период:</label
-          ><br />
-          <input type="text" class="inputOfInformation" name="AddNewDirection" id="AddNewAbonement1" />
-        </div>
+    <div class="row selectbox">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+              <label class="labelForInput" for="selectOfInformation">Вид занятий:</label
+                ><br />
+                <select class="selectOfInformation">
+                  <option class="optionOfSelects" value="2-">Беларусь</option>
+                  <option class="optionOfSelects" value="3-4">Россия</option>
+                  <option class="optionOfSelects" value="5-6">Хохлома</option>
+                  <option class="optionOfSelects" value="7-8">Польша</option>
+                  <option class="optionOfSelects" value="больше 9">Германия</option>
+                </select>
+          </div>
+          <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+              <label class="labelForInput" for="selectOfInformation">Срок действия абонимента:</label><br />
+              <select class="selectOfInformation">
+                <option class="optionOfSelects" value="2-">Минск</option>
+                <option class="optionOfSelects" value="3-4">Брест</option>
+                <option class="optionOfSelects" value="5-6">Пинск</option>
+                <option class="optionOfSelects" value="7-8">Дрогичин</option>
+                <option class="optionOfSelects" value="больше 9">Херичин</option>
+              </select>
+          </div>
+          <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-5 col-5">
+                <label class="AddNewAbonementCosts" for="AddNewAbonementCost">Стоимость:</label><br />
+                <input type="text" class="inputOfInformation" name="AddNewDirection" id="AddNewAbonementCosts" />
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-5">
+                <label class="labelForInputPeriod" for="AddNewAbonement1">Период:</label
+                  ><br />
+                  <input type="text" class="inputOfInformation" name="AddNewDirection" id="AddNewAbonement1" />
+            </div>    
+          </div>
+          <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+              <button type="submit" class="acceptButtonInSettings">
+                  <span>Создать</span>
+                </button>
+          </div>
       </div>
-      <button type="submit" class="acceptButtonInSettings">
-        <span>Создать</span>
-      </button>
-    </div>
-
-    <div class="elementOfListAbonements">
-      <div class="card-subscription">
-        <div class="deleteAbonementButton" onclick="location.href='#';">
-          <i class="fas fa-times"></i>
-        </div>
-        <div class="changeAbonementButton" onclick="location.href='#';">
-          <i class="far fa-edit"></i>
-        </div>
-        <div class="heder-card-subscription">
-          <img src="assets/images/heder-card.png" class="img-fluid" alt="" />
-          <span>Фитнес-студия</span><br />
-          <span class="studio-name">"Форма"</span>
-          <img
-            src="assets/images/heder-card2.png"
-            class="img-fluid heder-card-subscription-img"
-            alt=""
-          />
-        </div>
-
-        <div class="section-card-subscription">
-          <img src="assets/images/stroke.png" class="img-fluid stroke" alt="" />
-          <span>6</span>
-        </div>
-        <div class="footer-card-subscription">
-          <span class="month-text">МЕСЯЦЕВ</span>
-          <div class="circle1"></div>
-          <span class="section-name">тренажерный зал</span>
-          <div class="circle2"></div>
-          <span class="rubles">Цена <span class="price">160</span> рублей</span>
-        </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+          <div class="elementOfListAbonements">
+              <div class="card-subscription">
+                <div class="deleteAbonementButton" onclick="location.href='#';">
+                  <i class="fas fa-times"></i>
+                </div>
+                <div class="changeAbonementButton" onclick="location.href='#';">
+                  <i class="far fa-edit"></i>
+                </div>
+                <div class="heder-card-subscription">
+                  <img src="assets/images/heder-card.png" class="img-fluid" alt="" />
+                  <span>Фитнес-студия</span><br />
+                  <span class="studio-name">"Форма"</span>
+                  <img
+                    src="assets/images/heder-card2.png"
+                    class="img-fluid heder-card-subscription-img"
+                    alt=""
+                  />
+                </div>
+        
+                <div class="section-card-subscription">
+                  <img src="assets/images/stroke.png" class="img-fluid stroke" alt="" />
+                  <span>6</span>
+                </div>
+                <div class="footer-card-subscription">
+                  <span class="month-text">МЕСЯЦЕВ</span>
+                  <div class="circle1"></div>
+                  <span class="section-name">тренажерный зал</span>
+                  <div class="circle2"></div>
+                  <span class="rubles">Цена <span class="price">160</span> рублей</span>
+                </div>
+              </div>
+            </div>
       </div>
-    </div>
-
-    <div class="elementOfListAbonements">
-      <div class="card-subscription">
-        <div class="deleteAbonementButton" onclick="location.href='#';">
-          <i class="fas fa-times"></i>
-        </div>
-        <div class="changeAbonementButton" onclick="location.href='#';">
-          <i class="far fa-edit"></i>
-        </div>
-        <div class="heder-card-subscription">
-          <img src="assets/images/heder-card.png" class="img-fluid" alt="" />
-          <span>Фитнес-студия</span><br />
-          <span class="studio-name">"Форма"</span>
-          <img
-            src="assets/images/heder-card2.png"
-            class="img-fluid heder-card-subscription-img"
-            alt=""
-          />
-        </div>
-
-        <div class="section-card-subscription">
-          <img src="assets/images/stroke.png" class="img-fluid stroke" alt="" />
-          <span>6</span>
-        </div>
-        <div class="footer-card-subscription">
-          <span class="month-text">МЕСЯЦЕВ</span>
-          <div class="circle1"></div>
-          <span class="section-name">тренажерный зал</span>
-          <div class="circle2"></div>
-          <span class="rubles">Цена <span class="price">160</span> рублей</span>
-        </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+          <div class="elementOfListAbonements">
+              <div class="card-subscription">
+                <div class="deleteAbonementButton" onclick="location.href='#';">
+                  <i class="fas fa-times"></i>
+                </div>
+                <div class="changeAbonementButton" onclick="location.href='#';">
+                  <i class="far fa-edit"></i>
+                </div>
+                <div class="heder-card-subscription">
+                  <img src="assets/images/heder-card.png" class="img-fluid" alt="" />
+                  <span>Фитнес-студия</span><br />
+                  <span class="studio-name">"Форма"</span>
+                  <img
+                    src="assets/images/heder-card2.png"
+                    class="img-fluid heder-card-subscription-img"
+                    alt=""
+                  />
+                </div>
+        
+                <div class="section-card-subscription">
+                  <img src="assets/images/stroke.png" class="img-fluid stroke" alt="" />
+                  <span>6</span>
+                </div>
+                <div class="footer-card-subscription">
+                  <span class="month-text">МЕСЯЦЕВ</span>
+                  <div class="circle1"></div>
+                  <span class="section-name">тренажерный зал</span>
+                  <div class="circle2"></div>
+                  <span class="rubles">Цена <span class="price">160</span> рублей</span>
+                </div>
+              </div>
+            </div>
       </div>
-    </div>
-
-    <div class="elementOfListAbonements">
-      <div class="card-subscription">
-        <div class="deleteAbonementButton" onclick="location.href='#';">
-          <i class="fas fa-times"></i>
-        </div>
-        <div class="changeAbonementButton" onclick="location.href='#';">
-          <i class="far fa-edit"></i>
-        </div>
-        <div class="heder-card-subscription">
-          <img src="assets/images/heder-card.png" class="img-fluid" alt="" />
-          <span>Фитнес-студия</span><br />
-          <span class="studio-name">"Форма"</span>
-          <img
-            src="assets/images/heder-card2.png"
-            class="img-fluid heder-card-subscription-img"
-            alt=""
-          />
-        </div>
-
-        <div class="section-card-subscription">
-          <img src="assets/images/stroke.png" class="img-fluid stroke" alt="" />
-          <span>6</span>
-        </div>
-        <div class="footer-card-subscription">
-          <span class="month-text">МЕСЯЦЕВ</span>
-          <div class="circle1"></div>
-          <span class="section-name">тренажерный зал</span>
-          <div class="circle2"></div>
-          <span class="rubles">Цена <span class="price">160</span> рублей</span>
-        </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+          <div class="elementOfListAbonements">
+              <div class="card-subscription">
+                <div class="deleteAbonementButton" onclick="location.href='#';">
+                  <i class="fas fa-times"></i>
+                </div>
+                <div class="changeAbonementButton" onclick="location.href='#';">
+                  <i class="far fa-edit"></i>
+                </div>
+                <div class="heder-card-subscription">
+                  <img src="assets/images/heder-card.png" class="img-fluid" alt="" />
+                  <span>Фитнес-студия</span><br />
+                  <span class="studio-name">"Форма"</span>
+                  <img
+                    src="assets/images/heder-card2.png"
+                    class="img-fluid heder-card-subscription-img"
+                    alt=""
+                  />
+                </div>
+        
+                <div class="section-card-subscription">
+                  <img src="assets/images/stroke.png" class="img-fluid stroke" alt="" />
+                  <span>6</span>
+                </div>
+                <div class="footer-card-subscription">
+                  <span class="month-text">МЕСЯЦЕВ</span>
+                  <div class="circle1"></div>
+                  <span class="section-name">тренажерный зал</span>
+                  <div class="circle2"></div>
+                  <span class="rubles">Цена <span class="price">160</span> рублей</span>
+                </div>
+              </div>
+            </div>
       </div>
-    </div>
-
-    <div class="elementOfListAbonements">
-      <div class="card-subscription">
-        <div class="deleteAbonementButton" onclick="location.href='#';">
-          <i class="fas fa-times"></i>
-        </div>
-        <div class="changeAbonementButton" onclick="location.href='#';">
-          <i class="far fa-edit"></i>
-        </div>
-        <div class="heder-card-subscription">
-          <img src="assets/images/heder-card.png" class="img-fluid" alt="" />
-          <span>Фитнес-студия</span><br />
-          <span class="studio-name">"Форма"</span>
-          <img
-            src="assets/images/heder-card2.png"
-            class="img-fluid heder-card-subscription-img"
-            alt=""
-          />
-        </div>
-
-        <div class="section-card-subscription">
-          <img src="assets/images/stroke.png" class="img-fluid stroke" alt="" />
-          <span>6</span>
-        </div>
-        <div class="footer-card-subscription">
-          <span class="month-text">МЕСЯЦЕВ</span>
-          <div class="circle1"></div>
-          <span class="section-name">тренажерный зал</span>
-          <div class="circle2"></div>
-          <span class="rubles">Цена <span class="price">160</span> рублей</span>
-        </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+          <div class="elementOfListAbonements">
+              <div class="card-subscription">
+                <div class="deleteAbonementButton" onclick="location.href='#';">
+                  <i class="fas fa-times"></i>
+                </div>
+                <div class="changeAbonementButton" onclick="location.href='#';">
+                  <i class="far fa-edit"></i>
+                </div>
+                <div class="heder-card-subscription">
+                  <img src="assets/images/heder-card.png" class="img-fluid" alt="" />
+                  <span>Фитнес-студия</span><br />
+                  <span class="studio-name">"Форма"</span>
+                  <img
+                    src="assets/images/heder-card2.png"
+                    class="img-fluid heder-card-subscription-img"
+                    alt=""
+                  />
+                </div>
+        
+                <div class="section-card-subscription">
+                  <img src="assets/images/stroke.png" class="img-fluid stroke" alt="" />
+                  <span>6</span>
+                </div>
+                <div class="footer-card-subscription">
+                  <span class="month-text">МЕСЯЦЕВ</span>
+                  <div class="circle1"></div>
+                  <span class="section-name">тренажерный зал</span>
+                  <div class="circle2"></div>
+                  <span class="rubles">Цена <span class="price">160</span> рублей</span>
+                </div>
+              </div>
+            </div>
       </div>
-    </div>
-
-    <div class="elementOfListAbonements">
-      <div class="card-subscription">
-        <div class="deleteAbonementButton" onclick="location.href='#';">
-          <i class="fas fa-times"></i>
-        </div>
-        <div class="changeAbonementButton" onclick="location.href='#';">
-          <i class="far fa-edit"></i>
-        </div>
-        <div class="heder-card-subscription">
-          <img src="assets/images/heder-card.png" class="img-fluid" alt="" />
-          <span>Фитнес-студия</span><br />
-          <span class="studio-name">"Форма"</span>
-          <img
-            src="assets/images/heder-card2.png"
-            class="img-fluid heder-card-subscription-img"
-            alt=""
-          />
-        </div>
-
-        <div class="section-card-subscription">
-          <img src="assets/images/stroke.png" class="img-fluid stroke" alt="" />
-          <span>6</span>
-        </div>
-        <div class="footer-card-subscription">
-          <span class="month-text">МЕСЯЦЕВ</span>
-          <div class="circle1"></div>
-          <span class="section-name">тренажерный зал</span>
-          <div class="circle2"></div>
-          <span class="rubles">Цена <span class="price">160</span> рублей</span>
-        </div>
-      </div>
-    </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+          <div class="elementOfListAbonements">
+              <div class="card-subscription">
+                <div class="deleteAbonementButton" onclick="location.href='#';">
+                  <i class="fas fa-times"></i>
+                </div>
+                <div class="changeAbonementButton" onclick="location.href='#';">
+                  <i class="far fa-edit"></i>
+                </div>
+                <div class="heder-card-subscription">
+                  <img src="assets/images/heder-card.png" class="img-fluid" alt="" />
+                  <span>Фитнес-студия</span><br />
+                  <span class="studio-name">"Форма"</span>
+                  <img
+                    src="assets/images/heder-card2.png"
+                    class="img-fluid heder-card-subscription-img"
+                    alt=""
+                  />
+                </div>
+        
+                <div class="section-card-subscription">
+                  <img src="assets/images/stroke.png" class="img-fluid stroke" alt="" />
+                  <span>6</span>
+                </div>
+                <div class="footer-card-subscription">
+                  <span class="month-text">МЕСЯЦЕВ</span>
+                  <div class="circle1"></div>
+                  <span class="section-name">тренажерный зал</span>
+                  <div class="circle2"></div>
+                  <span class="rubles">Цена <span class="price">160</span> рублей</span>
+                </div>
+              </div>
+            </div>
+      </div>  
   </div>
   <div class="blockForAcceptButton">
-    <button type="submit" class="acceptB uttonInSettings">
+    <button type="submit" class="acceptButtonInSettings">
       <span>Сохранить</span>
     </button>
   </div>
-</div>
+  
