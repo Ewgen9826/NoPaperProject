@@ -27,8 +27,8 @@
   flex-direction: column;
   border-right: 1px solid #dfdfdf;
   cursor: pointer;
-  transition: 0.3s;
   color: #000;
+  transition: 0s;
 }
 
 .selectedButton {
@@ -103,6 +103,7 @@
 }
 .icon-list {
   width: 18%;
+  transition: 0s;
 }
 .buttonBoxSetting:hover {
   background-color: #21be4a;

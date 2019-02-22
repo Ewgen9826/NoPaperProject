@@ -19,6 +19,7 @@
   border-bottom: 1px solid #dfdfdf;
   cursor: pointer;
   color: #000;
+  transition: 0s;
 }
 .buttonBoxEmployers span {
   transition: none;
