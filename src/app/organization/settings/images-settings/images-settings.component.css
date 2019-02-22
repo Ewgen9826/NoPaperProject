@@ -1,11 +1,4 @@
 /* <!--Фотографии-->*/
-.sectionForPhotosInSettings {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 50px;
-  grid-column-gap: 30px;
-}
 .onesPhotoInSettings {
   position: relative;
   width: 100%;
@@ -13,11 +6,11 @@
   background-color: red;
   border-radius: 5px;
   clear: both;
+  margin-bottom: 30px;
 }
 .onesPhotoInSettings:hover .deleteThisPhoto {
   opacity: 1;
 }
-
 .deleteThisPhoto {
   display: flex;
   opacity: 0;
@@ -33,7 +26,6 @@
   height: 100%;
   border-radius: 5px;
 }
-
 .deleteThisPhoto i {
   font-size: 22px;
 }
@@ -50,16 +42,13 @@
   height: 150px;
   border-radius: 5px;
 }
-
 .addedPhotoInSettings:hover {
   background-color: rgba(0, 0, 0, 0.18);
 }
-
 .addedPhotoInSettings > i {
   color: #a7a7a7;
   font-size: 72px;
 }
-
 .addedPhotoInSettings span {
   font-size: 18px;
 }
@@ -88,4 +77,19 @@
 .acceptButtonInSettings:hover {
   background-color: #269e44;
   transition: 0.2s linear;
+}
+@media only screen and (max-width:1200px){
+   
+}
+@media only screen and (max-width:992px){
+}
+@media only screen and (max-width:768px){
+ 
+}
+@media only screen and (max-width:576px){
+
+}
+
+@media only screen and (max-width:400px){
+  
 }
