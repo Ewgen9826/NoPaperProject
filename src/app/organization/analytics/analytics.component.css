@@ -1,10 +1,7 @@
-.boxForButtonsEmployers,
 .boxForButtonsAnalytics {
   padding-left: 0px;
 }
-.buttonsInBoxEmployers,
-.buttonsInBoxAnalytics,
-.buttonsInBoxSettings {
+.buttonsInBoxAnalytics {
   display: flex;
   flex-direction: column;
   width: 84%;
@@ -16,7 +13,6 @@
 .buttonBoxAnalytics span{
   transition: none;
 }
-.buttonBoxEmployers,
 .buttonBoxAnalytics {
   display: flex;
   align-items: center;
@@ -26,30 +22,59 @@
   border-bottom: 1px solid #dfdfdf;
   cursor: pointer;
   color:#000;
+  transition: 0s;
 }
 #buttonСontrol,
 #buttonRevenue {
   border-bottom: 0px solid #dfdfdf;
 }
-.buttonBoxEmployers:hover,
 .buttonBoxAnalytics:hover {
   background-color: #21be4a;
   color: white;
 }
-.selectedButtonOfEmployers,
 .selectedButtonOfAnalytics {
   background-color: #21be4a;
   color: white;
 }
-.buttonBoxEmployers:active,
 .buttonBoxAnalytics:active {
   background-color: #269e44;
 }
-.selectedBoxOfSelectedEmployers,
 .selectedBoxOfSelectedAnalytics {
   display: flex;
 }
 .active{
   background-color: #21be4a;
   color:#fff;
+}
+
+
+
+@media only screen and (min-width:1200px){
+}
+
+@media only screen and (max-width:1200px){ 
+}
+
+@media only screen and (max-width:992px){
+  .buttonBoxAnalytics {
+    font-size: 11px;
+  }
+    .buttonsInBoxAnalytics{
+    width: 87%;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .buttonsInBoxAnalytics{
+    width: 105%;
+  }
+  .buttonBoxAnalytics {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width:576px){
+}
+
+@media only screen and (max-width:400px){
 }

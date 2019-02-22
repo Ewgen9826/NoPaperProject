@@ -52,12 +52,9 @@
 
 
 @media only screen and (min-width:1200px){
-	
 }
 
-@media only screen and (max-width:1200px){
-
-    
+@media only screen and (max-width:1200px){  
 }
 
 @media only screen and (max-width:992px){
@@ -68,7 +65,6 @@
     width: 87%;
   }
 }
-
 @media only screen and (max-width:768px){
   .buttonsInBoxEmployers{
     width: 105%;
@@ -77,11 +73,8 @@
     font-size: 15px;
   }
 }
-
 @media only screen and (max-width:576px){
-  
 }
 
 @media only screen and (max-width:400px){
-
 }
