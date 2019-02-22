@@ -55,6 +55,7 @@
   transition: 0s;
 }
 .buttonInPanel span {
+  font-size: 16px;
   transition: 0s;
 }
 /* Содержимое панели */
@@ -143,7 +144,14 @@
 }
 
 @media only screen and (max-width:992px){
-
+  .buttonInPanel i {
+    font-size: 30px;
+    transition: 0s;
+  }
+  .buttonInPanel span {
+    font-size: 12px;
+    transition: 0s;
+  }
 }
 
 @media only screen and (max-width:768px){

@@ -172,6 +172,9 @@ input.ng-touched.ng-valid {
 }
 
 @media only screen and (max-width:992px){
+  .headlineNewEmloeyers {
+    font-size: 16px;
+  }
   .photoNewEmloeyers {
     height: 180px;
     width: 180px;
@@ -185,26 +188,26 @@ input.ng-touched.ng-valid {
   }
   input[id="TypeStaff"]:after {
     border-radius: 5px 0px 0px 5px;
-    font-size: 16px;
-    padding: 8px 0px 0px 10px;
+    font-size: 14px;
+    padding: 10px 0px 0px 15px;
   }
   input[id="TypeTrainer"]:after {
     border-radius: 0px 5px 5px 0px;
-    font-size: 16px;
-    padding: 8px 0px 0px 0px;
+    font-size: 14px;
+    padding: 10px 0px 0px 0px;
   }
   input[id="TypeStaff"]:checked:after {
-    font-size: 16px;
-    padding: 8px 0px 0px 10px;
+    font-size: 14px;
+    padding: 10px 0px 0px 15px;
   }
   input[id="TypeTrainer"]:checked:after {
-    font-size: 16px;
-    padding: 8px 0px 0px 0px;
+    font-size: 14px;
+    padding: 10px 0px 0px 0px;
   }
   .label-text-employers {
     font-family: "Open Sans", sans-serif;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
