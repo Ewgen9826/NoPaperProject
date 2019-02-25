@@ -21,18 +21,19 @@ p{
 }
 
 .item-header {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
 }
 .item-content {
+  padding-top: 15px;
   font-size: 1.125rem;
   color: #fff;
 }
 /*Button Parther*/
 
 .button-parther {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .button-parther a {
   font-size: 1rem;
@@ -60,6 +61,12 @@ p{
 }
 
 /*Cart Section*/
+.catalog-icon img{
+  width: 35px;
+  height: auto;
+  margin-bottom: 15px;
+
+}
 .cart-section {
   margin-top: 3.75rem;
 }
@@ -70,7 +77,7 @@ p{
   color: #fff;
   border-radius: 0.3125rem;
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 500;
 
   display: flex;
   flex-direction: column;
@@ -90,7 +97,7 @@ p{
 
 .cart-section .col-4 a:hover {
   border: 0.1875rem solid var(--green-color);
-  color: var(--green-color);
+
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -116,9 +123,7 @@ p{
   margin-left: 0px;
 }
 
-.card img {
-  margin-top: 20px;
-}
+
 .card h1 {
   font-size: 18px;
   font-weight: bold;
@@ -127,6 +132,7 @@ p{
 }
 
 .card p {
+  margin-bottom: 50px;
   font-size: 14px;
   text-align: center;
 }
@@ -285,7 +291,7 @@ p{
 }
 .shool-section .row .image-organization a {
   position: absolute;
-  left: 88.5%;
+  left: 88.6%;
   bottom: 0px;
   display: block;
   float: right;
@@ -406,7 +412,7 @@ p{
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
- 
+
 
 }
 
@@ -416,14 +422,14 @@ p{
     margin-top: 0;
   }
 .shool-section .row .image-organization a {
-   
+
     left: 86.4%;
     top: 85%;
     bottom: auto;
-  
+
 }
 .shool-section .row .description-organization {
- 
+
   padding: 0px 40px;
 }
 
@@ -434,25 +440,34 @@ p{
 @media (min-width: 768px) and (max-width: 991px) {
 
 .col-4{
-  padding: 10px; 
+  padding: 10px;
 }
-  
+
+.item-header {
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+.item-content {
+  font-size: 1rem;
+}
+
 .card-section{
   margin-top: 40px;
 }
 .cart-section {
-  margin-top: 2.75rem;
+  margin-top: 0.75rem;
 }
 .card p{
   padding: 8px;
-  
+
 }
 .more-deatails {
   margin-top: 40px;
   padding-bottom: 0;
 }
 .shool-section .row .description-organization {
- 
+
   padding: 0 30px;
 }
 .shool-section .row .description-organization p{
@@ -461,13 +476,32 @@ p{
 .shool-section .row .image-organization a{
   left: 81.6%;
 }
-  
+
 }
-  
+
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+.item-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+
+}
+.item-content {
+  font-size: 0.8rem !important;
+}
+.button-parther {
+  margin-top: 1.2rem;
+}
+.button-parther a{
+  margin-top: 0.6rem;
+}
+.button-parther a i {
+  width: 15px;
+  height: 15px;
+
+}
 .cart-section{
-    margin-top: 2.75rem;
+    margin-top: 0.75rem;
 }
 .card-chain::before {
   display: none;
@@ -479,31 +513,30 @@ p{
   margin-top: 40px;
 
 }
+.shool-section .row .image-organization a{
+  left: 87.8%;
+}
 .card p{
   padding: 0px 10px 20px 10px;
 }
 .shool-section .row .description-organization {
   padding: 40px 0;
 }
-.shool-section .row .image-organization a{
- 
-  left: 87.5%;
-}
 .about-section .container .description p {
   margin-top: 30px;
-  
+
 }
 .about-logo{
   display: flex;
   justify-content: center;
 }
 .more-shool{
-  margin-top:0;
+  margin-top:40px;
 
 }
 .news-section .new .line {
   display: none;
-  
+
 }
 }
 
@@ -514,9 +547,12 @@ p{
     text-align: center;
 
   }
+.cart-section{
+    margin-top: 1.75rem;
+}
 .about-section .container .description p {
     margin-top: 30px;
-    
+
 }
 .about-logo{
     display: flex;
@@ -524,11 +560,11 @@ p{
 }
 .news-section .new .line {
   display: none;
-  
+
 }
 .shool-section .row .image-organization a{
- 
-  left: 84%;
+
+  left: 85.5%;
 }
 .organization-name h1{
   font-size: 14px;
