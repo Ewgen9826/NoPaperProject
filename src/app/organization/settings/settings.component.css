@@ -1,11 +1,17 @@
 .buttonsInBoxSettings {
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 85%;
   margin-bottom: 50px;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.3);
+}
+#buttonSettingsPhoto{
+  border-bottom: 0px;
+}
+.boxForButtonsSettings{
+  height: 100%;
 }
 .buttonBoxSetting {
   display: flex;
@@ -16,6 +22,7 @@
   border-bottom: 1px solid #dfdfdf;
   cursor: pointer;
   color: #000;
+  transition: 0s;
 }
 .buttonBoxSetting span {
   transition: none;
@@ -23,6 +30,7 @@
 .buttonBoxSetting:hover {
   background-color: #21be4a;
   color: white;
+  transition: 0s;
 }
 .buttonBoxSetting:active {
   background-color: #269e44;
@@ -31,3 +39,46 @@
   background-color: #21be4a;
   color: #fff;
 }
+.boxForButtonsSettings{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0px;
+}
+
+
+@media only screen and (max-width:1200px){
+  .buttonBoxSetting span {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width:992px){
+  .buttonsInBoxSettings {
+    width: 87%;
+  }
+  .buttonBoxSetting span {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .buttonsInBoxSettings {
+    width:inherit;
+    margin-left: 20px;
+  }
+  .buttonBoxSetting span {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width:576px){
+  
+}
+
+@media only screen and (max-width:400px){
+ 
+}
+
+
+
+

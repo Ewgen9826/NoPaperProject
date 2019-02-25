@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: row;
   clear: both;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .nameOfThisDirection {
   display: flex;
@@ -83,4 +83,7 @@
 .acceptButtonInSettings:hover {
   background-color: #269e44;
   transition: 0.2s linear;
+}
+#AddNewDirection:focus{
+  border: 2px solid rgba(33, 190, 75, 0.7);
 }

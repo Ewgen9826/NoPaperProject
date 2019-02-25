@@ -1,12 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
-.main{
-  text-align: center;
-  position: relative;
+.router ~ * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
-body, .wrapper{
-  display: flex;
-  flex-direction: column;
+/*Fixed toast*/
+#toast-container > div {
+  opacity: 1;
 }
-.content{
-  flex-grow: 1;
+input[type='text'],input[type='email'],input[type='password']{
+	font-style: italic;
+	padding-left: 15px;
+	border: 2px solid  rgba(27, 27, 27, 0.3);
+	width: 100%;
+	height: 46px;
+	border-radius: 5px;
+	outline:none;  
+}
+input:focus{
+	border: 2px solid  rgba(33, 190, 75, 0.7);
 }

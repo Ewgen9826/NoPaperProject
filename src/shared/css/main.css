@@ -41,7 +41,7 @@ body {
 .blockForAcceptButton {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .acceptButtonInSettings {
   margin-top: 25px;
@@ -63,20 +63,7 @@ body {
 .labelForInput {
   font-weight: 600;
   font-size: 18px;
-}
-.inputOfInformation {
-  padding: 5px 15px 5px 15px;
-  height: 46px;
-  border-radius: 5px;
-  width: 100%;
-  border: 3px solid #939393;
-  font-size: 17px;
-  margin-bottom: 20px;
-  outline: none;
-}
-.inputOfInformation:focus {
-  border-color: #63d181;
-  box-shadow: none;
+  margin-bottom: 5px; 
 }
 /*Стили для ComboBox-ксов*/
 .selectbox {
@@ -91,11 +78,10 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   background: #21be4a;
-  border: 2px solid rgba(27, 27, 27, 0.3);
+  border:none;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  border: none;
   cursor: pointer;
   margin-bottom: 20px;
   outline: none;

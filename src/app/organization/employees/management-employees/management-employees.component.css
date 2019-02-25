@@ -207,3 +207,53 @@ img.card-img-top {
 .tmp_fs {
   background-position: left -40px;
 }
+.content-dialog{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  user-select:none;
+}
+.header-dialog{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.header-dialog h2{
+  color: #424242;
+  font-size:20px;
+  font-weight:bold;
+}
+.text-container{
+  display:flex;
+  padding: 0px 10px;
+}
+.text-dialog{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:#ef5350;
+}
+.text-dialog span{
+  color:#000;
+  font-size:16px;
+  margin-left:10px;
+  font-weight:500;
+  color: #424242;
+}
+.btn-container{
+  align-self:flex-end;
+  display:flex;
+  justify-content:space-around;
+  padding:5px 0px 20px 0px;
+}
+.btn-container button{
+  background: var(--green-color);
+  color:#fff;
+  margin-right:10px;
+  padding: 8px 25px;
+  border:none;
+}
+.btn-container button:hover{
+  background:#269e44;
+}

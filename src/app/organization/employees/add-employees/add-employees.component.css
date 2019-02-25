@@ -164,3 +164,113 @@ input.ng-touched.ng-invalid {
 input.ng-touched.ng-valid {
   border: solid var(--green-color) 2px;
 }
+
+
+
+@media only screen and (max-width:1200px){
+   
+}
+
+@media only screen and (max-width:992px){
+  .headlineNewEmloeyers {
+    font-size: 16px;
+  }
+  .photoNewEmloeyers {
+    height: 180px;
+    width: 180px;
+    margin-right: 40px;
+  }
+  input[type="radio"]:after {
+    width: 110px;
+  }
+  input[type="radio"]:checked:after {
+    width: 110px;
+  }
+  input[id="TypeStaff"]:after {
+    border-radius: 5px 0px 0px 5px;
+    font-size: 14px;
+    padding: 10px 0px 0px 15px;
+  }
+  input[id="TypeTrainer"]:after {
+    border-radius: 0px 5px 5px 0px;
+    font-size: 14px;
+    padding: 10px 0px 0px 0px;
+  }
+  input[id="TypeStaff"]:checked:after {
+    font-size: 14px;
+    padding: 10px 0px 0px 15px;
+  }
+  input[id="TypeTrainer"]:checked:after {
+    font-size: 14px;
+    padding: 10px 0px 0px 0px;
+  }
+  .label-text-employers {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .headlineNewEmloeyers {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .photoBlockOfNewEmloeyers {
+   margin-left: 32%;
+  }
+  input[type="radio"]:after {
+    width: 160px;
+  }
+  input[type="radio"]:checked:after {
+    width: 160px;
+  }
+  input[id="TypeStaff"]:after {
+    padding: 8px 0px 0px 40px;
+  }
+  input[id="TypeStaff"]:checked:after {
+    padding: 8px 0px 0px 40px;
+  }
+}
+
+@media only screen and (max-width:576px){
+  .photoBlockOfNewEmloeyers {
+    margin-left: 22%;
+   }
+  input[type="radio"]:after {
+    width: 140px;
+  }
+  input[type="radio"]:checked:after {
+    width: 140px;
+  }
+}
+
+@media only screen and (max-width:400px){
+  input[type="radio"]:after {
+    width: 110px;
+  }
+  input[type="radio"]:checked:after {
+    width: 110px;
+  }
+  input[id="TypeStaff"]:after {
+    border-radius: 5px 0px 0px 5px;
+    font-size: 16px;
+    padding: 8px 0px 0px 10px;
+  }
+  input[id="TypeTrainer"]:after {
+    border-radius: 0px 5px 5px 0px;
+    font-size: 16px;
+    padding: 8px 0px 0px 0px;
+  }
+  input[id="TypeStaff"]:checked:after {
+    font-size: 16px;
+    padding: 8px 0px 0px 10px;
+  }
+  input[id="TypeTrainer"]:checked:after {
+    font-size: 16px;
+    padding: 8px 0px 0px 0px;
+  }
+}
+

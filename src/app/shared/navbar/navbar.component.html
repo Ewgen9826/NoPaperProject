@@ -2,7 +2,8 @@
   <div class="background-opacity"></div>
   <div class="container">
     <div class="row justify-content-between">
-      <div class="menu-button menu-links">
+      
+      <div (click)="toggleMenuLink()" class="menu-button menu-links">
         <i class="fas fa-bars fa-1x"></i>
       </div>
 
@@ -20,8 +21,20 @@
         <a href="#" class="button-link">О нас</a>
       </div>
 
-      <div class="menu-button menu-register">
+      <div (click)="toggleMenuAccount()" class="menu-button menu-register">
         <i class="fas fa-key fa-1x"></i>
+      </div>
+
+      <div [@MenuLink]="stateMenuLink" class="menu-toggle">
+        <ul>
+          <li><a [routerLink]="['/register']" class="">Организации</a></li>
+          <li><a [routerLink]="['/register']" class="">О нас</a></li>
+          <li>
+            <a [routerLink]="['/register']" class="">Как это работает ?</a>
+          </li>
+          <li><a [routerLink]="['/register']" class="">Поиск</a></li>
+          <li><a [routerLink]="['/register']" class="">Новости</a></li>
+        </ul>
       </div>
 
       <div
@@ -36,18 +49,37 @@
         >
         <a
           *ngIf="display.isRegisterPage()"
-          [routerLink]="['/login']"
+          [routerLink]="['/register']"
           class="button-register"
           >Регистрация</a
         >
       </div>
+
+      <div [@MenuAccount]="stateMenuAccount" class="menu-account">
+          <i (click)="toggleMenuAccount()" class="fas fa-times"></i>
+        <div class="register-block-response">
+        <a
+          *ngIf="display.isLoginPage()"
+          [routerLink]="['/login']"
+          class="button-register"
+          >Войти</a
+        >
+        <a
+          *ngIf="display.isRegisterPage()"
+          [routerLink]="['/register']"
+          class="button-register"
+          >Регистрация</a
+        >
+      </div>
+      </div>
+
 
       <!--Выпадающее меню-------------------------------------------------------------------------------------------------------->
       <div class="menu-button menu-user">
         <i class="fas fa-key fa-1x"></i>
       </div>
       <div
-        class="user-block active col-lg-2 col-md-auto row align-items-center dropdown-user"
+        class="user-block active col-lg-2 col-md-auto  align-items-center dropdown-user"
         id="dropdownMenuLink"
         data-toggle="dropdown"
         aria-haspopup="true"
@@ -61,7 +93,7 @@
         </a>
         <div class="drop-down-list">
           <div
-            class="dropdown-menu menu-cap"
+            class="dropdown-menu dropdown-menu-right menu-cap"
             aria-labelledby="dropdownMenuLink"
           >
             <ul class="list-unstyled list-inline-item ">

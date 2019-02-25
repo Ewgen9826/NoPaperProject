@@ -17,13 +17,16 @@
       </div>
       <div class="col-12 ">
         <div class="row justify-content-center">
-          <a [routerLink]="['/organization/employees/management']" class="btn card-button-edit">
+          <a
+            [routerLink]="['/organization/employees/update', employee.Id]"
+            class="btn card-button-edit"
+          >
             <i class="fas fa-pencil-alt"></i>
           </a>
 
           <a
             [routerLink]="['/organization/employees/management']"
-            (click)="removeEmployee(employee)"
+            (click)="successRemove(employee)"
             class="btn card-button-remove"
           >
             <i class="fas fa-trash-alt"></i>
@@ -31,5 +34,37 @@
         </div>
       </div>
     </div>
+    
+ <!--Dialog Window-->
+ <nopaper-dialog [(visible)]="isDialogShow">
+
+    <div class="content-dialog">
+
+      <div class="header-dialog">
+        <h2>Подверждение действия</h2>
+      </div>
+      <div class="text-container">
+        <div class="text-dialog">
+          <i class="fas fa-4x fa-trash-alt"></i>
+          <span
+            >Вы действительно хотите удалить работника "{{nameEmployee}}"?</span
+          >
+        </div>
+       
+      </div>
+      <div class="btn-container">
+          <button (click)="removeEmployee(employee)" class="btn">
+            Да
+          </button>
+          <button (click)="isDialogShow = !isDialogShow" class="btn">
+              Нет
+            </button>
+        </div>
+    </div>
+
+  </nopaper-dialog>
   </div>
+
+
+ 
 </div>

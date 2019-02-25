@@ -1,5 +1,6 @@
 export class Employee {
   constructor(
+    id: number,
     position: string,
     firstName: string,
     lastName: string,
@@ -8,6 +9,7 @@ export class Employee {
     password: string,
     confirmPasswrod: string
   ) {
+    this.Id = id;
     this.Position = position;
     this.FirstName = firstName;
     this.LastName = lastName;
@@ -16,6 +18,7 @@ export class Employee {
     this.Password = password;
     this.ConfirmPassword = confirmPasswrod;
   }
+  Id: number;
   Position: string;
   FirstName: string;
   LastName: string;

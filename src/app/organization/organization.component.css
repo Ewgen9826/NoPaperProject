@@ -27,8 +27,8 @@
   flex-direction: column;
   border-right: 1px solid #dfdfdf;
   cursor: pointer;
-  transition: 0.3s;
   color: #000;
+  transition: 0s;
 }
 
 .selectedButton {
@@ -55,6 +55,7 @@
   transition: 0s;
 }
 .buttonInPanel span {
+  font-size: 16px;
   transition: 0s;
 }
 /* Содержимое панели */
@@ -103,6 +104,7 @@
 }
 .icon-list {
   width: 18%;
+  transition: 0s;
 }
 .buttonBoxSetting:hover {
   background-color: #21be4a;
@@ -133,3 +135,36 @@
     brightness(112%) contrast(100%);
   color: #fff;
 }
+
+
+
+
+@media only screen and (max-width:1200px){
+  
+}
+
+@media only screen and (max-width:992px){
+  .buttonInPanel i {
+    font-size: 30px;
+    transition: 0s;
+  }
+  .buttonInPanel span {
+    font-size: 12px;
+    transition: 0s;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .buttonsInControlPanel {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:576px){
+ 
+}
+
+@media only screen and (max-width:400px){
+
+}
+

@@ -10,23 +10,17 @@
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 600;
-}
-.selectbox {
-  width: 100%;
-  margin-bottom: 18px;
-}
-
-.selectbox select:active {
-  border: none;
-  box-shadow: none;
+  margin-top: 15px;
 }
 .labelSelectOfInformation {
   margin-top: 12px;
   margin-bottom: 5px;
 }
 .optionOfSelects {
-  background-color: white;
-  color: black;
+  font-size: 16px;
+}
+.selectOfInformation{
+  font-size: 16px;
 }
 
 .textAreaInSettings {
@@ -38,12 +32,40 @@
   border: 2px solid rgba(27, 27, 27, 0.3);
   border-radius: 5px;
   margin-top: 4px;
-  margin-bottom: 15px;
   font-size: 16px;
   padding: 5px 10px 5px 10px;
 }
-.textAreaInSettings:focus,
-#AddNewDirection:focus,
-.textAreaNewAbonement:focus {
+.textAreaInSettings:focus {
   border: 2px solid rgba(33, 190, 75, 0.7);
+}
+
+
+@media only screen and (max-width:1200px){
+   
+}
+
+@media only screen and (max-width:992px){
+  .nameOfSection{
+    font-size: 16px;
+  }
+  .optionOfSelects {
+    font-size: 14px;
+  }
+  .selectOfInformation{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .selectOfInformation{
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width:576px){
+
+}
+
+@media only screen and (max-width:400px){
+  
 }

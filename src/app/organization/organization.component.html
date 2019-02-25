@@ -59,8 +59,8 @@
     </a>
   </div>
   <div class="contentOfControlPanel">
-    <main [@routeAnimations]="prepareRoute(outlet)" class="content">
+    <div [@routeAnimations]="prepareRoute(outlet)">
       <router-outlet #outlet="outlet"></router-outlet>
-    </main>
+    </div>
   </div>
 </div>
