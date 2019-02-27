@@ -1,42 +1,71 @@
 <nav class="navbar-section">
-  <div class="background-opacity"></div>
+  <div [ngClass]="{visible: blackNavbar}" class="background-opacity"></div>
   <div class="container">
     <div class="row justify-content-between">
-      
+      <!--Toggle for navigation section-->
       <div (click)="toggleMenuLink()" class="menu-button menu-links">
-        <i class="fas fa-bars fa-1x"></i>
+        <img
+          *ngIf="!showMenuLink"
+          class="icon"
+          src="assets/images/menu.svg"
+          alt="Menu"
+        />
+        <img
+          *ngIf="showMenuLink"
+          class="close-icon"
+          src="assets/images/close.svg"
+          alt="Menu"
+        />
       </div>
 
+      <!--Logo section-->
       <div class="logo-block">
         <a [routerLink]="['/home']">
           <img src="assets/images/logo.png" />
         </a>
       </div>
 
+      <!--Menu Navigation for Desktop-->
       <div class="links-block col-lg-7 row align-items-center">
-        <a href="#" class="button-link">Как это работает ?</a>
-        <a href="#" class="button-link">Организации</a>
-        <a href="#" class="button-link">Поиск</a>
-        <a href="#" class="button-link">Новости</a>
-        <a href="#" class="button-link">О нас</a>
+        <a [routerLink]="['/login']" class="button-link">Как это работает ?</a>
+        <a [routerLink]="['/login']" class="button-link">Организации</a>
+        <a [routerLink]="['/login']" class="button-link">Поиск</a>
+        <a [routerLink]="['/login']" class="button-link">Новости</a>
+        <a [routerLink]="['/login']" class="button-link">О нас</a>
       </div>
 
-      <div (click)="toggleMenuAccount()" class="menu-button menu-register">
-        <i class="fas fa-key fa-1x"></i>
-      </div>
-
+      <!--Menu Navigation for Mobile-->
       <div [@MenuLink]="stateMenuLink" class="menu-toggle">
         <ul>
-          <li><a [routerLink]="['/register']" class="">Организации</a></li>
-          <li><a [routerLink]="['/register']" class="">О нас</a></li>
           <li>
-            <a [routerLink]="['/register']" class="">Как это работает ?</a>
+            <a (click)="toggleMenuLink()" [routerLink]="['/login']" class=""
+              >Организации</a
+            >
           </li>
-          <li><a [routerLink]="['/register']" class="">Поиск</a></li>
-          <li><a [routerLink]="['/register']" class="">Новости</a></li>
+          <li>
+            <a (click)="toggleMenuLink()" [routerLink]="['/login']" class=""
+              >О нас</a
+            >
+          </li>
+          <li>
+            <a (click)="toggleMenuLink()" [routerLink]="['/login']" class=""
+              >Как это работает ?</a
+            >
+          </li>
+          <li>
+            <a (click)="toggleMenuLink()" [routerLink]="['/login']" class=""
+              >Поиск</a
+            >
+          </li>
+          <li>
+            <a (click)="toggleMenuLink()" [routerLink]="['/login']" class=""
+              >Новости</a
+            >
+          </li>
         </ul>
       </div>
 
+      <!--Register Buttons section-->
       <div
         *ngIf="!isLogin"
         class="register-block col-lg-3 col-md-auto row align-items-center"
@@ -54,30 +83,7 @@
           >Регистрация</a
         >
       </div>
-
-      <div [@MenuAccount]="stateMenuAccount" class="menu-account">
-          <i (click)="toggleMenuAccount()" class="fas fa-times"></i>
-        <div class="register-block-response">
-        <a
-          *ngIf="display.isLoginPage()"
-          [routerLink]="['/login']"
-          class="button-register"
-          >Войти</a
-        >
-        <a
-          *ngIf="display.isRegisterPage()"
-          [routerLink]="['/register']"
-          class="button-register"
-          >Регистрация</a
-        >
-      </div>
-      </div>
-
-
-      <!--Выпадающее меню-------------------------------------------------------------------------------------------------------->
-      <div class="menu-button menu-user">
-        <i class="fas fa-key fa-1x"></i>
-      </div>
+      <!--Menu Account for Desktop-->
       <div
         class="user-block active col-lg-2 col-md-auto  align-items-center dropdown-user"
         id="dropdownMenuLink"
@@ -174,7 +180,143 @@
           </div>
         </div>
       </div>
-      <!--Выпадающее меню-------------------------------------------------------------------------------------------------------->
+
+      <!--Toggle for register section-->
+      <div
+        *ngIf="!isLogin"
+        (click)="toggleMenuAccount()"
+        class="menu-button toggle-register"
+      >
+        <img src="assets/images/add-user.svg" class="icon" alt="Add User" />
+      </div>
+
+      <!--Toggle for account section-->
+      <div
+        *ngIf="isLogin"
+        (click)="toggleMenuAccount()"
+        class="menu-button toggle-account"
+      >
+        <img src="assets/images/user.svg" class="icon" alt="Add User" />
+      </div>
+
+      <!--Menu Account for Mobile-->
+      <div [@MenuAccount]="stateMenuAccount" class="menu-account">
+        <i (click)="toggleMenuAccount()" class="fas fa-times"></i>
+
+        <!--Register block-->
+        <div *ngIf="!isLogin" class="register-block-response">
+          <a
+            *ngIf="display.isLoginPage()"
+            (click)="toggleMenuAccount()"
+            [routerLink]="['/login']"
+            class="button-register"
+            >Войти</a
+          >
+          <a
+            *ngIf="display.isRegisterPage()"
+            (click)="toggleMenuAccount()"
+            [routerLink]="['/register']"
+            class="button-register"
+            >Регистрация</a
+          >
+        </div>
+
+        <!--Account block-->
+        <div *ngIf="isLogin" class="account-block-response">
+          <div class="img-account">
+            <div class="img-account-container">
+              <img src="assets/images/my-images.jpg" alt="Client Image" />
+            </div>
+            <span>Адреналин</span>
+          </div>
+
+          <ul class="link-account">
+            <li>
+              <a
+                [routerLink]="['/organization/employees']"
+                (click)="toggleMenuAccount()"
+              >
+                <img
+                  src="assets/images/employee.svg"
+                  class="icon-account"
+                  alt=""
+                />
+                <span>Сотрудники</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                [routerLink]="['/organization/clients']"
+                (click)="toggleMenuAccount()"
+              >
+                <img
+                  src="assets/images/clients.svg"
+                  class="icon-account"
+                  alt=""
+                />
+                <span>Клиенты</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                [routerLink]="['/organization/notifications']"
+                (click)="toggleMenuAccount()"
+              >
+                <img
+                  src="assets/images/notification.svg"
+                  class="icon-account"
+                  alt=""
+                />
+                <span>Уведомления</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                [routerLink]="['/organization/employees']"
+                (click)="toggleMenuAccount()"
+              >
+                <img
+                  src="assets/images/analitics.svg"
+                  class="icon-account"
+                  alt=""
+                />
+                <span>Аналитика</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                [routerLink]="['/organization/settings']"
+                (click)="toggleMenuAccount()"
+              >
+                <img
+                  src="assets/images/settings.svg"
+                  class="icon-account"
+                  alt=""
+                />
+                <span>Настройки</span>
+              </a>
+            </li>
+            <li>
+              <a
+                [routerLink]="['/login']"
+                (click)="logout()"
+                (click)="toggleMenuAccount()"
+              >
+                <img
+                  src="assets/images/output.svg"
+                  alt=""
+                  class="icon-account"
+                />
+                <span>Выйти</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </nav>

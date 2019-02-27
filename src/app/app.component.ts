@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { DisplayContentService } from "./shared/services/display-content.service";
 import { AuthenticationService } from "./shared/services/authentication.service";
 import { fadeAnimation } from "./animation";
-import { ToastrService } from 'ngx-toastr';
+import { ToastrService } from "ngx-toastr";
 
 @Component({
   selector: "nopaper-root",
@@ -15,9 +15,5 @@ export class AppComponent {
     public display: DisplayContentService,
     public authService: AuthenticationService,
     private toastr: ToastrService
-  ) { }
-  
-  showSuccess() {
-    this.toastr.success("Hello World!!", "Hello");
-  }
+  ) {}
 }

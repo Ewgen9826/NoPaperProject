@@ -10,10 +10,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 1;
+  opacity: 0;
   background: linear-gradient(to bottom, #181f22, #3e4a4f);
   height: 100%;
   width: 100%;
+}
+.visible{
+  opacity:1;
 }
 .black {
   opacity: 1;
@@ -68,21 +71,20 @@
 }
 
 .navbar-section .menu-button {
-  color: var(--green-color);
-  border: 2px solid var(--green-color);
-  border-radius: 5px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
   align-self: center;
-  padding: 3px 10px;
+  width:30px;
+  height:30px;
   z-index: 10;
   display: none;
 }
-.navbar-section .menu-button i {
-  transition: none;
-  font-size:24px;
-  font-weight:600;
+.navbar-section .menu-button .icon {
+  width:30px;
+  height:30px;
 }
 .navbar-section .menu-button:hover {
-  background: #21be4a;
   color: #fff;
   cursor: pointer;
 }
@@ -106,15 +108,6 @@
   height: 35px;
 }
 
-/* .dropdown-user:hover .expand {
-  color: #21be4a;
-}
-.dropdown-user:hover .name-user {
-  color: #21be4a;
-}
-.dropdown-user:hover .button-user {
-  border:1.5px #21be4a solid;
-} */
 a.user > i {
   top: 4px;
   position: relative;
@@ -143,19 +136,11 @@ a.user > i {
 }
 
 .navbar-section .menu-button {
-  color: var(--green-color);
-  border: 2px solid var(--green-color);
-  border-radius: 5px;
   align-self: center;
-  padding: 3px 10px;
   z-index: 1;
   display: none;
 }
-.navbar-section .menu-button i {
-  transition: none;
-}
 .navbar-section .menu-button:hover {
-  background: #21be4a;
   color: #fff;
   cursor: pointer;
 }
@@ -163,7 +148,6 @@ a.user > i {
 .drop-down-list {
   position: fixed;
   top: 36px;
-  
 }
 .menu-cap {
   height: 70px;
@@ -171,7 +155,7 @@ a.user > i {
   border-radius: 0px 0px 6px 6px;
   padding-left: 8px;
   background: linear-gradient(to bottom, #3e4a4f, #616769);
- 
+
   border: none;
 }
 .border-list {
@@ -218,152 +202,231 @@ li.border-list > a > p {
   width: 30%;
   transition: 0s;
   filter: invert(100%) sepia(31%) saturate(0%) hue-rotate(94deg)
-  brightness(112%) contrast(100%);
+    brightness(112%) contrast(100%);
 }
 .border-list:hover .icon-list {
   filter: invert(100%) sepia(31%) saturate(0%) hue-rotate(94deg)
     brightness(112%) contrast(100%);
 }
 
-
 /* Start Menu Link*/
-.menu-toggle{
-  z-index:-1;
+.menu-toggle {
+  z-index: -1;
   position: absolute;
-  top:0;
-  left:0;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  width:100%;
-  height:100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
   background: linear-gradient(to top, #181f22, #3e4a4f);
-  transition:0.6s;
+  transition: 0.6s;
 }
 
 .menu-toggle ul {
   list-style: none;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.menu-toggle ul li{
-  display:flex;
-  justify-content:center;
-  width:100%;
-  padding:10px;
+.menu-toggle ul li {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
 }
-.menu-toggle ul li a{
-  width:90%;
-  text-align:center;
-  font-size:30px;
-  font-weight:600;
-  color:#fff;
-  border-radius:10px;
-  background-color:var(--green-color);
+.menu-toggle ul li a {
+  width: 90%;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 20px;
+  background:rgba(255,255,255,0.04);
 }
-.menu-toggle ul li a:hover{
-  background-color:#269e44;
+.menu-toggle ul li a:hover {
+  background-color: #269e44;
 }
 /* End Menu Link*/
 
-/* Start Menu Account*/
-.menu-account{
-  position:absolute;
-  display:flex;
-  justify-content:center;
-  z-index:10000;
-  top:0;
-  right:0;
+/* Start Menu Account for Desktop*/
+.menu-account {
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  right: 0;
   background: linear-gradient(to bottom, #181f22, #3e4a4f);
-  width:30%;
-  height:100vh;
+  width: 300px;
+  height: 100vh;
+  border-radius:20px 0px 0px 20px;
 }
-.menu-account i{
-  position:absolute;
-  top:20px;
-  left:20px;
-  color:var(--green-color);
-  font-size:30px;
+.menu-account i {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: var(--green-color);
+  font-size: 30px;
 }
-.menu-account i:hover{
-  font-size:29px;
-  cursor:pointer;
-  color:#269e44;
+.menu-account i:hover {
+  font-size: 29px;
+  cursor: pointer;
+  color: #269e44;
 }
-.register-block-response{
-  display:flex;
-  flex-direction:column;
+.register-block-response {
+  height:100%;
+  display: flex;
+  flex-direction: column;
   justify-content:center;
 }
-.register-block-response a{
-  margin-top:25px;
-  font-size:24px;
-  border-radius:10px;
-  text-align:center;
-  padding:10px 20px;
+.register-block-response a {
+  margin:0 20px 20px 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 8px 12px;
 }
-/* End Menu Account*/
-@media(max-width: 1200px) {
+/* End Menu Account for Desktop*/
 
-  .register-block{
-      display: none;
+/*Start Menu Account for Mobile*/
+.account-block-response {
+  display: flex;
+  flex-direction: column;
+}
+.img-account {
+  display: flex;
+  flex-direction: column;
+}
+.img-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-account-container {
+  margin-top:10px;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid var(--green-color);
+}
+.img-account img {
+  width: 100%;
+  height: auto;
+}
+.img-account span {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 5px;
+  font-weight: 600;
+  color: var(--green-color);
+}
+.link-account {
+  list-style: none;
+}
+.link-account li{
+  display:flex;
+  flex-direction:row;
+}
+.link-account li a {
+  margin:5px 10px;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  color:#fff;
+  padding:10px 0;
+  border-radius:20px;
+  background:rgba(255,255,255,0.04);
+}
+.link-account li a img{
+  margin-right:10px;
+  margin-left:50px;
+}
+.icon-account {
+  width: 40px;
+  height:40px;
+  filter: invert(100%) sepia(31%) saturate(0%) hue-rotate(94deg)
+    brightness(112%) contrast(100%);
+}
+.open-icon{
+  transition:0.3s;
+}
+.menu-button .close-icon{
+  width:25px;
+  height:25px;
+}
+/*End Menu Account for Mobile*/
+
+/*Стили для адаптивности*/
+@media (max-width: 1200px) {
+  .register-block {
+    display: none;
   }
-  
-  .navbar-section .menu-register{
-      display: block;
+
+  .navbar-section .toggle-register {
+    display: block;
   }
-  
-  .navbar-section .container .row{
-      justify-content: space-around;
+
+  .navbar-section .container .row {
+    justify-content: space-around;
   }
 }
-@media (max-width:996px){
-  html{
-      font-size: 14px;
+@media (max-width: 996px) {
+  html {
+    font-size: 14px;
   }
-  .links-block{
-     display: none;
+  .links-block {
+    display: none;
   }
-  .register-block{
-      display: none;
+  .register-block {
+    display: none;
   }
-  .navbar-section .menu-links{
-      display: block;
+  .navbar-section .menu-links {
+    display: block;
   }
-  .navbar-section .menu-toggle ul li a{
-    width:50%;
+  .navbar-section .menu-toggle ul li a {
+    width: 50%;
   }
-  .navbar-section .menu-account{
-    width:35%;
+  .navbar-section .menu-account {
+    width: 300px;
   }
 }
-@media (max-width:768px){
-  html{
-      font-size: 12px;
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
   }
-  .navbar-section .menu-toggle ul li a{
-    width:60%;
+  .navbar-section .menu-toggle ul li a {
+    width: 60%;
   }
-  .navbar-section .menu-account{
-    width:40%;
+  .navbar-section .menu-account {
+    width: 300px;
   }
   .user-block {
     display: none;
   }
+  .navbar-section .toggle-account {
+    display: block;
+  }
 }
-@media (max-width:575.98px){
-  .menu-links{
-    margin-left:15px;
+@media (max-width: 575.98px) {
+  .menu-links {
+    margin-left: 15px;
   }
-  .menu-register{
-    margin-right:15px;
+  .menu-button {
+    margin-right: 15px;
   }
-  .navbar-section .menu-toggle ul li a{
-    width:90%;
+  .navbar-section .menu-toggle ul li a {
+    width: 90%;
   }
-  .navbar-section .menu-account{
-    width:80%;
+  .navbar-section .menu-account {
+    width: 300px;
   }
 }

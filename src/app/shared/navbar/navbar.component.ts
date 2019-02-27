@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { DisplayContentService } from "../services/display-content.service";
-import { Router } from "@angular/router";
+import { Router, UrlTree } from "@angular/router";
 import { slideMenuLink, slideMenuAccount } from "../animations";
 
 @Component({
@@ -16,23 +16,31 @@ export class NavbarComponent implements OnInit {
   public showMenuAccount = false;
 
   ngOnInit() {}
+
+  get blackNavbar() {
+    if (this.router.url[1] === "o") {
+      return true;
+    }
+    return false;
+  }
+
   get stateMenuLink() {
-    return this.showMenuLink ? 'showMenuLink' : 'hideMenuLink'
+    return this.showMenuLink ? "showMenuLink" : "hideMenuLink";
   }
   get stateMenuAccount() {
-    return this.showMenuAccount ? 'showMenuAccount' : 'hideMenuAccount'
+    return this.showMenuAccount ? "showMenuAccount" : "hideMenuAccount";
   }
 
   toggleMenuAccount() {
     this.showMenuAccount = !this.showMenuAccount;
-    if(this.showMenuLink){
-      this.showMenuLink=false;
+    if (this.showMenuLink) {
+      this.showMenuLink = false;
     }
   }
-   toggleMenuLink() {
+  toggleMenuLink() {
     this.showMenuLink = !this.showMenuLink;
-     if(this.showMenuAccount){
-      this.showMenuAccount=false;
+    if (this.showMenuAccount) {
+      this.showMenuAccount = false;
     }
   }
   logout() {
