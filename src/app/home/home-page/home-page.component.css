@@ -71,7 +71,7 @@ p{
   margin-top: 3.75rem;
 }
 
-.cart-section .col-4 a {
+.cart-section .col-sm-4 a {
   height: 8.125rem;
   background: rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -87,16 +87,24 @@ p{
   transition: all 0.3s ease;
 }
 
-.cart-section .col-4 a span {
+.cart-section .col-sm-4 a span {
   transition: none;
 }
-.cart-section .col-4 a i {
+.cart-section .col-sm-4 a i {
   margin-bottom: 1.25rem;
   transition: none;
 }
+.card-section img{
+  margin-top: 40px;
+}
 
-.cart-section .col-4 a:hover {
+.catalog-icon:hover .catalog-icon-image{
+  filter: invert(56%) sepia(24%) saturate(1494%) hue-rotate(83deg) brightness(100%) contrast(86%);
+
+}
+.cart-section .col-sm-4 a:hover {
   border: 0.1875rem solid var(--green-color);
+  color: var(--green-color);
 
   background: rgba(0, 0, 0, 0.3);
 }
@@ -119,6 +127,7 @@ p{
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .card-section .col-4 {
   margin-left: 0px;
 }
@@ -132,7 +141,7 @@ p{
 }
 
 .card p {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 14px;
   text-align: center;
 }
@@ -482,12 +491,13 @@ p{
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 .item-header {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
 
 }
 .item-content {
-  font-size: 0.8rem !important;
+  padding-top: 0;
+  font-size: 1rem;
 }
 .button-parther {
   margin-top: 1.2rem;
@@ -545,35 +555,75 @@ p{
 @media (max-width: 480px) {
 .basic-header p{
     text-align: center;
+}
+.item-header {
+  font-size: 1.1rem;
+}
+.item-content {
+  font-size: 0.8rem;
+}
+.col-12 {
+  flex: 0 0 125%;
+  max-width: 125%;
+}
 
-  }
 .cart-section{
-    margin-top: 1.75rem;
+  margin-top: 1rem;
+    
+}
+.cart-section .col-sm-4 a{
+  height: 3.125rem;
+}
+.catalog-icon{
+  display: block !important;
+
+  text-align: center;
+  padding-top: 4px;
+
+}
+.catalog-icon-image{
+  padding-top: 10px;
+  padding-right: 8px;
+
+}
+.catalog-icon img{
+  width:25px;
+
+
+}
+.catalog-icon span{
+  font-size: 0.8rem;
+
 }
 .about-section .container .description p {
-    margin-top: 30px;
+  margin-top: 30px;
 
 }
 .about-logo{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .news-section .new .line {
   display: none;
 
 }
 .shool-section .row .image-organization a{
-
-  left: 85.5%;
+  display: none;
 }
 .organization-name h1{
   font-size: 14px;
-
 }
-
 .organization-description {
   padding: 40px 0;
 }
+
+}
+
+@media (max-height: 480px)
+{
+  #myCarousel{
+    display: none;
+  }
 
 }
 
