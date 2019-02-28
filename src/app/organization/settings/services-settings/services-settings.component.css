@@ -30,6 +30,7 @@
   background-color: #21be4a;
   color: white;
   border-radius: 0px 5px 0px 5px;
+  line-height: 1.1;
 }
 .lineWithOnesDirection:hover .buttonForDeleteDirection {
   opacity: 1;
